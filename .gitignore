@@ -22,6 +22,7 @@ secrets.json
 
 # Analysis cache (may contain document text)
 backend/app/cache/
+frontend/api/_backend/app/cache/
 **/cache/*.json
 
 # Build outputs
