@@ -1,0 +1,17 @@
+name = "clearsign-api"
+main = "app/main.py"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["python_workers"]
+
+[build]
+command = "pip install -r requirements.txt"
+
+[vars]
+ENVIRONMENT = "production"
+GROQ_MODEL_LARGE = "llama-3.3-70b-versatile"
+GROQ_MODEL_SMALL = "llama-3.1-8b-instant"
+MAX_FILE_SIZE_MB = "10"
+
+# Note: GROQ_API_KEY and ALLOWED_ORIGINS are injected as secrets via:
+# wrangler secret put GROQ_API_KEY
+# wrangler secret put ALLOWED_ORIGINS

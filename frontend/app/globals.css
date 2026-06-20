@@ -1,0 +1,141 @@
+/**
+ * ClearSign v1.0 — Global CSS
+ *
+ * Design system tokens from UX Brief §14.
+ * Animations per UX Brief §11.
+ * Reduced motion fallbacks per UX Brief §11.1.
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Design Tokens ── */
+:root {
+  /* Brand */
+  --color-brand: #2C5EE8;
+  --color-brand-accent: #4F6EF7;
+  --color-brand-dark: #1A3DA8;
+
+  /* Surfaces */
+  --color-bg: #F8F9FC;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F1F5FD;
+
+  /* Status */
+  --color-success: #16A34A;
+  --color-warning: #D97706;
+  --color-danger: #DC2626;
+  --color-info: #0EA5E9;
+
+  /* Text */
+  --color-text-primary: #0F1E35;
+  --color-text-secondary: #4B5563;
+  --color-text-muted: #94A3B8;
+
+  /* Borders */
+  --color-border: #E2E8F0;
+
+  /* Font families */
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), "Courier New", monospace;
+}
+
+/* ── Base Styles ── */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+}
+
+/* ── Focus Indicators (UX Brief §12.1) ── */
+*:focus-visible {
+  outline: 2px solid var(--color-brand-accent);
+  outline-offset: 2px;
+}
+
+/* ── Animations (UX Brief §11) ── */
+
+/* Clause card stream-in animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: slideIn 200ms ease-out both;
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* ── Reduced Motion Fallbacks (UX Brief §11.1) ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-in {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ── Utility Classes ── */
+
+/* Font mono utility using Geist Mono */
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Screen reader only (accessible hide) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only:focus-within,
+.focus\:not-sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}

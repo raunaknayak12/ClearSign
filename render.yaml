@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: clearsign-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_MODEL_LARGE
+        value: llama-3.3-70b-versatile
+      - key: GROQ_MODEL_SMALL
+        value: llama-3.1-8b-instant
+      - key: MAX_FILE_SIZE_MB
+        value: "10"
+      - key: ALLOWED_ORIGINS
+        sync: false

@@ -1,0 +1,67 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Environment and secrets — NEVER commit these
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env.local
+frontend/.env.production
+frontend/.env.development
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Analysis cache (may contain document text)
+backend/app/cache/
+**/cache/*.json
+
+# Build outputs
+.next/
+out/
+dist/
+build/
+
+# IDE and OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Testing
+coverage/
+.pytest_cache/
+htmlcov/
+.tox/
+
+# Deployment
+.vercel
+.wrangler
+.render
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# TypeScript
+*.tsbuildinfo
+
+# Cursor / local tooling
+.cursor/
+assets/
+
+# Large local-only folders (not needed in repo)
+ClearSignSource/
