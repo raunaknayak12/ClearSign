@@ -5,6 +5,8 @@ Per Backend Schema §2 — Pydantic v2 models for incoming API payloads.
 
 from pydantic import BaseModel, Field
 
+from .response import ClauseCard
+
 
 class QARequest(BaseModel):
     """Payload for POST /api/v1/qa — clause-level Q&A.
@@ -30,3 +32,14 @@ class QARequest(BaseModel):
         ...,
         description="Detected document type (e.g. 'Rental Agreement', 'NDA').",
     )
+
+
+class ReportRequest(BaseModel):
+    """Payload for POST /api/v1/report — PDF report generation.
+
+    Accepts the document type and the list of analyzed clauses.
+    """
+
+    document_type: str = Field(..., description="Detected document type.")
+    clauses: list[ClauseCard] = Field(..., description="List of analysed clauses.")
+

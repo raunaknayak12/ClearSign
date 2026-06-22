@@ -129,13 +129,26 @@ def _select_header_set(headers: list[_HeaderMatch]) -> list[_HeaderMatch]:
 
     best: list[_HeaderMatch] = []
 
-    for pattern_headers in by_pattern.values():
+    # Predefined priority of patterns to make selection fully deterministic
+    pattern_priority = ["section", "article", "clause", "numbered_sub", "numbered", "numbered_paren"]
+
+    for pattern_name in pattern_priority:
+        pattern_headers = by_pattern.get(pattern_name, [])
+        if not pattern_headers:
+            continue
+
         # Within each pattern, try each depth level
         depths = {_ref_depth(h.ref) for h in pattern_headers}
         for depth in sorted(depths):
             filtered = [h for h in pattern_headers if _ref_depth(h.ref) == depth]
             if len(filtered) > len(best):
                 best = filtered
+            elif len(filtered) == len(best) and best:
+                # Tie-breaker: prefer more specific patterns (earlier in pattern_priority list)
+                current_best_priority = pattern_priority.index(best[0].pattern)
+                new_priority = pattern_priority.index(pattern_name)
+                if new_priority < current_best_priority:
+                    best = filtered
 
     # Prefer finer granularity when top-level sections have many sub-clauses
     section_headers = by_pattern.get("section", [])
@@ -249,7 +262,8 @@ def segment_clauses(raw_text: str) -> list[ClauseSegment]:
 
 def chunk_segments(
     segments: list[ClauseSegment],
-    max_tokens: int = 5000,
+    max_tokens: int = 1500,
+    max_segments_per_chunk: int = 5,
 ) -> list[list[ClauseSegment]]:
     """Group clause segments into token-bounded chunks without splitting clauses.
 
@@ -258,9 +272,10 @@ def chunk_segments(
     Args:
         segments: Ordered clause segments.
         max_tokens: Maximum tokens per chunk (1 token ≈ 4 chars).
+        max_segments_per_chunk: Maximum number of segments allowed in a single chunk.
 
     Returns:
-        List of segment groups, each fitting within the token budget.
+        List of segment groups, each fitting within the token and segment count budgets.
     """
     if not segments:
         return []
@@ -272,7 +287,7 @@ def chunk_segments(
 
     for segment in segments:
         seg_chars = len(segment.text)
-        if current and current_chars + seg_chars > max_chars:
+        if current and (current_chars + seg_chars > max_chars or len(current) >= max_segments_per_chunk):
             chunks.append(current)
             current = []
             current_chars = 0

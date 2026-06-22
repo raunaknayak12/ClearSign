@@ -6,7 +6,8 @@
  */
 
 import { API_BASE_URL } from "./constants";
-import type { QARequest } from "@/types";
+import type { QARequest, ClauseCard } from "@/types";
+
 
 /**
  * Upload a document for AI analysis.
@@ -65,6 +66,43 @@ export async function askQuestion(request: QARequest): Promise<Response> {
 
   return response;
 }
+
+/**
+ * Generate and download a PDF report from clause analysis data.
+ *
+ * Sends the document type and list of clauses to POST /api/v1/report.
+ * Returns the PDF file as a Blob.
+ *
+ * @param documentType - The detected document type.
+ * @param clauses - List of ClauseCard objects.
+ * @returns Promise resolving to the PDF Blob.
+ */
+export async function downloadReport(
+  documentType: string,
+  clauses: ClauseCard[]
+): Promise<Blob> {
+  const response = await fetch(`${API_BASE_URL}/api/v1/report`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      document_type: documentType,
+      clauses,
+    }),
+  });
+
+  if (!response.ok) {
+    const errorData = await response.json().catch(() => null);
+    const message =
+      errorData?.detail ||
+      "Something went wrong while generating the report. Please try again.";
+    throw new APIError(message, response.status);
+  }
+
+  return response.blob();
+}
+
 
 /**
  * Custom error class for API errors with status codes.

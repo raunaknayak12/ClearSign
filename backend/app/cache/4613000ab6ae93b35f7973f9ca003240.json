@@ -1,0 +1,258 @@
+{
+  "document_type": "Lease Agreement",
+  "confidence": 0.95,
+  "clauses": [
+    {
+      "clause_id": "clause_1",
+      "clause_title": "Grant of Leave and Licence",
+      "clause_type": "standard",
+      "original_text": "1.1 The Licensor hereby grants Leave and Licence to the Licensee in respect of Flat No. 804, 8th Floor,\nTower A, Rustomjee Elements, Off New Link Road, Andheri (West), Mumbai — 400058,\nadmeasuring approximately 650 sq. ft. (carpet area), consisting of 1 Bedroom, 1 Hall, 1 Kitchen and 1\nBathroom (hereinafter referred to as the \"Licensed Premises\").",
+      "explanation": "The licensor is giving the licensee permission to use the specified flat for a certain period.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 1 (ref: 1.1) of the document"
+    },
+    {
+      "clause_id": "clause_2",
+      "clause_title": "Use of Licensed Premises",
+      "clause_type": "standard",
+      "original_text": "1.2 The Licensed Premises is for residential purposes only. The Licensee shall not use or permit to be\nused the Licensed Premises or any part thereof for any commercial, professional, or industrial purpose\nwhatsoever.",
+      "explanation": "The licensee can only use the premises for residential purposes and not for any commercial or business activities.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 2 (ref: 1.2) of the document"
+    },
+    {
+      "clause_id": "clause_3",
+      "clause_title": "Condition of Licensed Premises",
+      "clause_type": "standard",
+      "original_text": "1.3 The Licensee acknowledges having inspected the Licensed Premises prior to execution of this\nAgreement and having found the same in good and tenantable condition. A list of fixtures, fittings, and\nfurniture handed over to the Licensee is annexed hereto as Schedule I.\n2. TERM AND DURATION",
+      "explanation": "The licensee has inspected the premises and found it to be in good condition. A list of fixtures and furniture is attached to the agreement.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 3 (ref: 1.3) of the document"
+    },
+    {
+      "clause_id": "clause_4",
+      "clause_title": "Term and Duration",
+      "clause_type": "standard",
+      "original_text": "2.1 This Agreement shall be effective for a period of Eleven (11) months commencing from 1st July\n2026 and expiring on 31st May 2027 (hereinafter referred to as the \"Licence Period\"), unless earlier\nterminated in accordance with the provisions hereof.",
+      "explanation": "The agreement is valid for 11 months, starting from July 1st, 2026, and ending on May 31st, 2027.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 4 (ref: 2.1) of the document"
+    },
+    {
+      "clause_id": "clause_5",
+      "clause_title": "Renewal of Agreement",
+      "clause_type": "standard",
+      "original_text": "2.2 Renewal: Upon expiry of the Licence Period, this Agreement may be renewed for a further period by\nmutual written consent of both parties. Renewal shall not be automatic. Silence or continued occupation\nbeyond the Licence Period shall not constitute tacit renewal and shall be treated as unauthorised\noccupation subject to applicable law.",
+      "explanation": "The agreement can be renewed after it expires, but both parties must agree in writing. If not renewed, the licensee must vacate the premises.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 5 (ref: 2.2) of the document"
+    },
+    {
+      "clause_id": "clause_6",
+      "clause_title": "Holdover Penalty",
+      "clause_type": "penalty_liability",
+      "original_text": "2.3 Holdover Penalty: In the event the Licensee continues to occupy the Licensed Premises beyond the\nexpiry of the Licence Period without execution of a renewal agreement, the Licensee shall be liable to pay\nthe Licensor a holdover compensation at twice (2x) the prevailing monthly licence fee for each month or\npart thereof of such holdover, without prejudice to the Licensor's right to institute eviction proceedings.\n3. LICENCE FEE AND PAYMENT TERMS\n--- PAGE 2 ---",
+      "explanation": "If the licensee stays in the premises after the agreement expires without renewing, they must pay double the monthly fee as a penalty.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 6 (ref: 2.3) of the document"
+    },
+    {
+      "clause_id": "clause_7",
+      "clause_title": "Monthly Licence Fee",
+      "clause_type": "payment",
+      "original_text": "3.1 Monthly Licence Fee: The Licensee shall pay the Licensor a monthly licence fee of Rs. 32,000/-\n(Rupees Thirty-Two Thousand only), payable in advance on or before the 5th day of each English\ncalendar month.",
+      "explanation": "The licensee must pay a monthly fee of Rs. 32,000 in advance, by the 5th of each month.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 7 (ref: 3.1) of the document"
+    },
+    {
+      "clause_id": "clause_8",
+      "clause_title": "Mode of Payment",
+      "clause_type": "payment",
+      "original_text": "3.2 Mode of Payment: All payments shall be made via NEFT/IMPS/UPI to the Licensor's bank account:\nA/c No. 004201087642, HDFC Bank, Andheri Branch, IFSC: HDFC0000042. Cash payments shall not\nbe accepted.",
+      "explanation": "The licensee must pay the fee through online banking to the licensor's account, and cash payments are not allowed.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 8 (ref: 3.2) of the document"
+    },
+    {
+      "clause_id": "clause_9",
+      "clause_title": "Late Payment Penalty",
+      "clause_type": "penalty_liability",
+      "original_text": "3.3 Late Payment Penalty: In the event of delay beyond the 5th of any month, the Licensee shall pay a\nlate payment charge of Rs. 500/- per day of delay, which shall be added to the next month's licence fee.\nSustained delay beyond 15 days shall be treated as a material breach under Clause 9.2.",
+      "explanation": "If the licensee pays late, they must pay a penalty of Rs. 500 per day, and if the delay is more than 15 days, it's considered a serious breach.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 9 (ref: 3.3) of the document"
+    },
+    {
+      "clause_id": "clause_10",
+      "clause_title": "Annual Escalation",
+      "clause_type": "payment",
+      "original_text": "3.4 Annual Escalation: The monthly licence fee shall stand escalated by 5% (five percent) on each\nanniversary of the commencement date during any renewal term. No escalation applies during the initial\n11-month Licence Period.\n4. SECURITY DEPOSIT",
+      "explanation": "The monthly fee will increase by 5% every year on the anniversary of the start date, but only after the initial 11 months.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 10 (ref: 3.4) of the document"
+    },
+    {
+      "clause_id": "clause_11",
+      "clause_title": "Security Deposit",
+      "clause_type": "payment",
+      "original_text": "4.1 The Licensee has, on or before the execution of this Agreement, paid to the Licensor an interest-free\nrefundable security deposit of Rs. 1,60,000/- (Rupees One Lakh Sixty Thousand only), equivalent to\nfive (5) months' licence fee (hereinafter referred to as the \"Security Deposit\"). Receipt of the same is\nhereby acknowledged by the Licensor.",
+      "explanation": "The licensee has paid a refundable security deposit of Rs. 1,60,000, which is equal to 5 months' fee.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 11 (ref: 4.1) of the document"
+    },
+    {
+      "clause_id": "clause_12",
+      "clause_title": "Refund of Security Deposit",
+      "clause_type": "payment",
+      "original_text": "4.2 The Security Deposit shall be refunded to the Licensee within 30 (thirty) days of the Licensee\nvacating the Licensed Premises and handing over vacant possession thereof, subject to deduction of:\n(a) any outstanding licence fee or other dues payable by the Licensee; (b) the cost of repair of any\ndamage to the Licensed Premises or its fixtures beyond fair wear and tear; and (c) any penalty amounts\naccrued under this Agreement.",
+      "explanation": "The security deposit will be refunded within 30 days of the licensee vacating the premises, after deducting any outstanding fees, damages, or penalties.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 12 (ref: 4.2) of the document"
+    },
+    {
+      "clause_id": "clause_13",
+      "clause_title": "Security Deposit Not Applicable to Licence Fee",
+      "clause_type": "payment",
+      "original_text": "4.3 The Security Deposit shall not be appropriated by the Licensee towards licence fee for the last\nmonth(s) of the Licence Period. Any attempt to do so shall be treated as a default under Clause 9.2.\n5. MAINTENANCE AND UTILITIES",
+      "explanation": "The security deposit cannot be used to pay the licence fee for the last month, and trying to do so is considered a default.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 13 (ref: 4.3) of the document"
+    },
+    {
+      "clause_id": "clause_14",
+      "clause_title": "Society Maintenance Charges",
+      "clause_type": "payment",
+      "original_text": "5.1 Society Maintenance Charges: The monthly society maintenance charges currently assessed at\nRs. 3,200/- per month shall be borne exclusively by the Licensor. Any increase in maintenance charges\nlevied by the co-operative housing society during the Licence Period shall likewise be borne by the\nLicensor.",
+      "explanation": "The licensor is responsible for paying the monthly society maintenance charges, which are currently Rs. 3,200.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 14 (ref: 5.1) of the document"
+    },
+    {
+      "clause_id": "clause_15",
+      "clause_title": "Electricity and Water Charges",
+      "clause_type": "payment",
+      "original_text": "5.2 Electricity and Water: The Licensee shall bear all charges for electricity consumed at the Licensed\nPremises as per BEST/Adani Electricity meter readings, and any water charges levied directly on the\npremises. The electricity connection is in the Licensor's name; the Licensee shall not apply for a change\nof name on the meter.",
+      "explanation": "The licensee is responsible for paying for electricity and water used in the premises, and the electricity connection is in the licensor's name.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 15 (ref: 5.2) of the document"
+    },
+    {
+      "clause_id": "clause_16",
+      "clause_title": "Broadband and Cable Installation",
+      "clause_type": "standard",
+      "original_text": "5.3 Broadband and Cable: Installation of any broadband internet or cable TV connection by the\nLicensee shall require prior written approval from the Licensor and shall comply with the housing society's\nbye-laws. The Licensee shall bear all such connection and monthly charges.\n6. OBLIGATIONS OF THE LICENSEE",
+      "explanation": "The licensee needs the licensor's approval to install broadband or cable TV, and must follow the housing society's rules and pay the charges.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 16 (ref: 5.3) of the document"
+    },
+    {
+      "clause_id": "clause_17",
+      "clause_title": "Obligations of the Licensee",
+      "clause_type": "standard",
+      "original_text": "6.1 The Licensee shall: (a) use the Licensed Premises solely for residential purposes; (b) maintain the\nLicensed Premises in clean and good condition; (c) not make any structural alterations, additions, or\npermanent fixtures without prior written consent of the Licensor; (d) not sublet, assign, or part with\n--- PAGE 3 ---\npossession of the Licensed Premises or any part thereof to any third party; (e) not store or use any\nhazardous, flammable, or illegal substances on the Licensed Premises; (f) comply with all rules and\nbye-laws of the co-operative housing society; and (g) allow the Licensor or his authorised representative\nto inspect the Licensed Premises on giving 48 hours' prior notice.",
+      "explanation": "The licensee must use the premises only for residential purposes, keep it clean, not make any changes without permission, and follow the housing society's rules.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 17 (ref: 6.1) of the document"
+    },
+    {
+      "clause_id": "clause_18",
+      "clause_title": "Pet Policy",
+      "clause_type": "standard",
+      "original_text": "6.2 Pet Policy: Keeping of pets is not permitted on the Licensed Premises without the prior written\nconsent of the Licensor, which may be granted or withheld at the Licensor's sole discretion.\n7. OBLIGATIONS OF THE LICENSOR",
+      "explanation": "The licensee is not allowed to keep pets in the premises without the licensor's prior written permission.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 18 (ref: 6.2) of the document"
+    },
+    {
+      "clause_id": "clause_19",
+      "clause_title": "Obligations of the Licensor",
+      "clause_type": "standard",
+      "original_text": "7.1 The Licensor shall: (a) ensure that the Licensed Premises is handed over to the Licensee in a\nhabitable condition; (b) attend to and bear costs of any major structural or plumbing repairs not\nattributable to the Licensee's acts or omissions; (c) not interfere with the Licensee's peaceful use and\nenjoyment of the Licensed Premises during the Licence Period; and (d) ensure timely payment of all\nproperty taxes and society maintenance charges.\n8. LOCK-IN PERIOD",
+      "explanation": "The licensor must hand over the premises in good condition, fix any major repairs, not disturb the licensee, and pay property taxes and maintenance charges.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 19 (ref: 7.1) of the document"
+    },
+    {
+      "clause_id": "clause_20",
+      "clause_title": "Lock-in Period",
+      "clause_type": "standard",
+      "original_text": "8.1 There shall be a mandatory lock-in period of 3 (three) months from the commencement date of this\nAgreement during which neither party may terminate this Agreement except in the case of a material\nbreach under Clause 9.2. If the Licensee vacates the Licensed Premises during the lock-in period, the\nLicensor shall be entitled to forfeit the Security Deposit to the extent of unpaid licence fee for the\nunexpired lock-in period.\n9. TERMINATION",
+      "explanation": "There is a 3-month lock-in period where neither party can terminate the agreement, except in case of a serious breach. If the licensee leaves during this period, the licensor can keep the security deposit.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 20 (ref: 8.1) of the document"
+    },
+    {
+      "clause_id": "clause_21",
+      "clause_title": "Termination by Notice",
+      "clause_type": "termination",
+      "original_text": "9.1 Termination by Notice: Either party may terminate this Agreement after the lock-in period by giving\nthe other party not less than 30 (thirty) days' prior written notice delivered by registered post or email\nwith read receipt to the addresses specified herein.",
+      "explanation": "After the lock-in period, either party can terminate the agreement by giving 30 days' written notice.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 21 (ref: 9.1) of the document"
+    },
+    {
+      "clause_id": "clause_22",
+      "clause_title": "Termination for Material Breach",
+      "clause_type": "termination",
+      "original_text": "9.2 Termination for Material Breach: The Licensor may terminate this Agreement forthwith (without any\nnotice period) upon: (a) non-payment of licence fee for more than 15 consecutive days; (b) subletting or\nassignment without consent; (c) use of the Licensed Premises for any illegal purpose; or (d) causing wilful\ndamage to the Licensed Premises exceeding Rs. 20,000/-. Upon such termination, the Licensor may\nforfeit the Security Deposit.",
+      "explanation": "The licensor can terminate the agreement immediately if the licensee doesn't pay the fee for more than 15 days, sublets without permission, uses the premises for illegal activities, or causes significant damage.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Segment 22 (ref: 9.2) of the document"
+    },
+    {
+      "clause_id": "clause_23",
+      "clause_title": "Vacation and Handover: Upon termination or expiry of this Agreement, the Licensee shall vacate",
+      "clause_type": "standard",
+      "original_text": "9.3 Vacation and Handover: Upon termination or expiry of this Agreement, the Licensee shall vacate\nand hand over the Licensed Premises to the Licensor in the same condition as received, subject to fair\nwear and tear, along with all keys, access cards, and parking tokens.\n10. INDEMNIFICATION",
+      "explanation": "This clause is part of the agreement.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on section 9.3 of the document."
+    },
+    {
+      "clause_id": "clause_24",
+      "clause_title": "The Licensee shall indemnify, defend, and hold harmless the Licensor from and against any loss,",
+      "clause_type": "standard",
+      "original_text": "10.1 The Licensee shall indemnify, defend, and hold harmless the Licensor from and against any loss,\ndamage, liability, claim, or expense (including reasonable legal fees) arising out of or resulting from: (a)\nthe Licensee's breach of any provision of this Agreement; (b) any act, omission, or negligence of the\nLicensee, the Licensee's family members, servants, or guests; or (c) the Licensee's failure to comply with\nany applicable law, rule, or society bye-law.\n11. DISPUTE RESOLUTION AND JURISDICTION",
+      "explanation": "This clause is part of the agreement.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on section 10.1 of the document."
+    },
+    {
+      "clause_id": "clause_25",
+      "clause_title": "Governing Law: This Agreement shall be governed by and construed in accordance with the laws",
+      "clause_type": "standard",
+      "original_text": "11.1 Governing Law: This Agreement shall be governed by and construed in accordance with the laws\nof India, and in particular the Maharashtra Rent Control Act, 1999, and the Indian Contract Act, 1872.\n--- PAGE 4 ---",
+      "explanation": "This clause is part of the agreement.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on section 11.1 of the document."
+    },
+    {
+      "clause_id": "clause_26",
+      "clause_title": "Jurisdiction: Any dispute arising out of or in connection with this Agreement shall be subject to...",
+      "clause_type": "standard",
+      "original_text": "11.2 Jurisdiction: Any dispute arising out of or in connection with this Agreement shall be subject to the\nexclusive jurisdiction of the courts in Mumbai, Maharashtra.",
+      "explanation": "This clause is part of the agreement.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on section 11.2 of the document."
+    },
+    {
+      "clause_id": "clause_27",
+      "clause_title": "Arbitration: Notwithstanding Clause 11.2, either party may elect to resolve any dispute through",
+      "clause_type": "standard",
+      "original_text": "11.3 Arbitration: Notwithstanding Clause 11.2, either party may elect to resolve any dispute through\narbitration under the Arbitration and Conciliation Act, 1996, with a sole arbitrator mutually appointed by\nboth parties. The seat of arbitration shall be Mumbai.\n12. REGISTRATION AND STAMP DUTY",
+      "explanation": "This clause is part of the agreement.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on section 11.3 of the document."
+    },
+    {
+      "clause_id": "clause_28",
+      "clause_title": "This Agreement shall be duly registered under the Registration Act, 1908, and stamped in",
+      "clause_type": "standard",
+      "original_text": "12.1 This Agreement shall be duly registered under the Registration Act, 1908, and stamped in\naccordance with the Maharashtra Stamp Act. The stamp duty and registration charges shall be borne\nequally by the Licensor and the Licensee.\n13. NOTICES\nAll notices under this Agreement shall be in writing and delivered to the addresses stated on Page 1\nhereof, or such other address as a party may notify in writing. Notices sent by registered post or email\nwith confirmed delivery shall be deemed received within 48 hours of dispatch.\n14. ENTIRE AGREEMENT\nThis Agreement constitutes the entire agreement between the parties with respect to the subject matter\nhereof and supersedes all prior negotiations, representations, warranties, and understandings of the\nparties.\nSIGNATURES\n___________________________\n___________________________\nLICENSOR\nLICENSEE\nMr. Suresh Ramakrishnan Iyer\nDate: ____________\nMs. Priya Nair\nDate: ____________\nWITNESSES:\n1. ___________________________ Name: ________________ Address: ________________________________\n2. ___________________________ Name: ________________ Address: ________________________________",
+      "explanation": "This clause is part of the agreement.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on section 12.1 of the document."
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "document_type": "Employment Contract",
+  "confidence": 0.98,
+  "clauses": [
+    {
+      "clause_id": "clause_1",
+      "clause_title": "Job Appointment",
+      "clause_type": "standard",
+      "original_text": "1.1 You are appointed as Senior Software Engineer — Backend (Grade: E3) reporting to the\nEngineering Manager, Platform Team, or such other person as the Company may designate from time\nto time.",
+      "explanation": "This clause states that the employee is being appointed as a Senior Software Engineer and will report to the Engineering Manager or another designated person.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 1.1 of the document"
+    },
+    {
+      "clause_id": "clause_2",
+      "clause_title": "Job Transfer",
+      "clause_type": "standard",
+      "original_text": "1.2 The Company reserves the right to transfer, depute, or assign you to any department, division,\nproject, or location (including client sites) in India or abroad as may be required by the exigencies of\nbusiness, without any additional compensation unless otherwise mutually agreed in writing.\n2. DATE OF JOINING AND PROBATION",
+      "explanation": "This clause states that the company can transfer the employee to any department, location, or project without additional compensation, unless otherwise agreed in writing.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 1.2 of the document"
+    },
+    {
+      "clause_id": "clause_3",
+      "clause_title": "Date of Joining",
+      "clause_type": "standard",
+      "original_text": "2.1 Date of Joining: Your employment shall commence on 1st July 2026 (hereinafter referred to as the\n\"Date of Joining\").",
+      "explanation": "This clause states that the employee's employment will start on July 1st, 2026.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 2.1 of the document"
+    },
+    {
+      "clause_id": "clause_4",
+      "clause_title": "Probation Period",
+      "clause_type": "standard",
+      "original_text": "2.2 Probation Period: You will be on probation for a period of 6 (six) months from the Date of Joining.\nDuring the probation period, either party may terminate the employment by giving 7 (seven) days'\nwritten notice or pay in lieu thereof. The Company may extend the probation period by up to a further 3\nmonths at its sole discretion, subject to written intimation.",
+      "explanation": "This clause states that the employee will be on probation for 6 months, during which either party can terminate the employment with 7 days' notice or pay in lieu thereof.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 2.2 of the document"
+    },
+    {
+      "clause_id": "clause_5",
+      "clause_title": "Confirmation of Employment",
+      "clause_type": "standard",
+      "original_text": "2.3 Successful completion of probation shall be confirmed in writing by your reporting manager. Absence\nof such written confirmation shall not be construed as automatic confirmation of employment.\n3. COMPENSATION AND BENEFITS",
+      "explanation": "This clause states that the employee's successful completion of probation will be confirmed in writing by their manager, and absence of confirmation does not mean automatic confirmation of employment.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 2.3 of the document"
+    },
+    {
+      "clause_id": "clause_6",
+      "clause_title": "Compensation",
+      "clause_type": "payment",
+      "original_text": "3.1 Fixed Annual Gross Compensation (CTC): Your gross annual Cost to Company (CTC) shall be Rs.\n18,00,000/- (Rupees Eighteen Lakhs only), structured as detailed in Annexure A — Compensation\nBreakup attached hereto. Statutory deductions including PF (Employee contribution), Professional Tax,\nand TDS shall be deducted as applicable.\n--- PAGE 2 ---",
+      "explanation": "This clause states that the employee's annual gross compensation will be Rs. 18,00,000, with statutory deductions applicable.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 3.1 of the document"
+    },
+    {
+      "clause_id": "clause_7",
+      "clause_title": "Variable Pay",
+      "clause_type": "payment",
+      "original_text": "3.2 Variable Pay: You are eligible for a target Variable Pay of Rs. 2,00,000/- (Rupees Two Lakhs\nonly) per annum (which is in addition to the CTC above), subject to achievement of individual and\ncompany performance targets as determined by the Company at its sole discretion. Variable Pay is not\nguaranteed and will not be paid if your employment is terminated for cause or you resign before the\npayout date.",
+      "explanation": "This clause states that the employee is eligible for a target variable pay of Rs. 2,00,000 per annum, subject to performance targets and discretion of the company.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 3.2 of the document"
+    },
+    {
+      "clause_id": "clause_8",
+      "clause_title": "ESOP",
+      "clause_type": "payment",
+      "original_text": "3.3 ESOP: Subject to your successful confirmation of employment and board approval, you will be\ngranted Employee Stock Options for 300 options under the Company's ESOP Scheme 2023, with a\nvesting schedule of 25% per year over 4 years. ESOP terms shall be governed exclusively by the ESOP\nPlan document.",
+      "explanation": "This clause states that the employee will be granted 300 employee stock options, subject to confirmation of employment and board approval, with a vesting schedule of 25% per year over 4 years.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 3.3 of the document"
+    },
+    {
+      "clause_id": "clause_9",
+      "clause_title": "Benefits",
+      "clause_type": "standard",
+      "original_text": "3.4 Benefits: You shall be entitled to: (a) Group Medical Insurance covering you and up to 2 dependants,\nwith a sum assured of Rs. 5,00,000/-; (b) 24 days of paid annual leave per calendar year (accrued\npro-rata); (c) 12 days of casual/sick leave per year; and (d) public holidays as per the Company's annual\nholiday list.\n4. WORKING HOURS AND OVERTIME",
+      "explanation": "This clause states that the employee is entitled to group medical insurance, paid annual leave, casual/sick leave, and public holidays as per the company's holiday list.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 3.4 of the document"
+    },
+    {
+      "clause_id": "clause_10",
+      "clause_title": "Working Hours",
+      "clause_type": "standard",
+      "original_text": "4.1 Standard working hours are 9 hours per day, 5 days a week (Monday to Friday), inclusive of a\n1-hour lunch break. The Company operates a hybrid work model: minimum 3 days in-office per week at\nthe Company's Lower Parel office or such other location as designated.",
+      "explanation": "This clause states that the standard working hours are 9 hours per day, 5 days a week, with a hybrid work model requiring minimum 3 days in-office per week.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 4.1 of the document"
+    },
+    {
+      "clause_id": "clause_11",
+      "clause_title": "Overtime",
+      "clause_type": "standard",
+      "original_text": "4.2 Given the nature of software engineering, you may be required to work beyond standard hours,\nincluding weekends and public holidays, to meet project deadlines. No additional overtime\ncompensation is payable for such extended hours as they are considered part of the role at this seniority\nlevel. Compensatory off may be granted at the discretion of your manager.\n5. CONFIDENTIALITY AND INTELLECTUAL PROPERTY",
+      "explanation": "This clause states that the employee may be required to work beyond standard hours, including weekends and public holidays, without additional overtime compensation, but may be granted compensatory off at the manager's discretion.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 4.2 of the document"
+    },
+    {
+      "clause_id": "clause_12",
+      "clause_title": "Confidentiality",
+      "clause_type": "confidentiality",
+      "original_text": "5.1 Confidentiality: You acknowledge that in the course of your employment you will have access to\nconfidential information including but not limited to: business plans, source code, technical architecture,\nclient data, financial information, and trade secrets (collectively, \"Confidential Information\"). You agree\nto: (a) hold all Confidential Information in strict confidence; (b) not disclose any Confidential Information to\nany third party during or after employment; and (c) use Confidential Information solely for the purposes of\nyour employment duties.",
+      "explanation": "This clause states that the employee must keep confidential information, including business plans and trade secrets, in strict confidence and not disclose it to any third party during or after employment.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 5.1 of the document"
+    },
+    {
+      "clause_id": "clause_13",
+      "clause_title": "Intellectual Property Assignment",
+      "clause_type": "standard",
+      "original_text": "5.2 Intellectual Property Assignment: All work product, inventions, developments, software code,\nalgorithms, and creative works conceived or developed by you in the course of your employment\n(whether or not during working hours and whether or not using Company equipment) shall be the\nexclusive property of the Company. You hereby irrevocably assign all rights, title, and interest therein to\nthe Company.\n6. NON-COMPETE AND NON-SOLICITATION",
+      "explanation": "This clause states that all work product, inventions, and developments created by the employee during employment belong exclusively to the company, and the employee assigns all rights to the company.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 5.2 of the document"
+    },
+    {
+      "clause_id": "clause_14",
+      "clause_title": "Non-Compete",
+      "clause_type": "penalty_liability",
+      "original_text": "6.1 Non-Compete (Post-Employment): For a period of 12 (twelve) months following the termination of\nyour employment for any reason, you shall not directly or indirectly engage in, own, manage, operate, or\nbe employed by any business that competes with the Company's core products in the SaaS/B2B\nenterprise software market in India. You acknowledge that this restriction is reasonable given the nature\nof your role and the Confidential Information you will access.",
+      "explanation": "This clause states that for 12 months after termination, the employee cannot engage in any business that competes with the company's core products in India, and acknowledges this restriction as reasonable.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 6.1 of the document"
+    },
+    {
+      "clause_id": "clause_15",
+      "clause_title": "Non-Solicitation",
+      "clause_type": "penalty_liability",
+      "original_text": "6.2 Non-Solicitation: For a period of 12 (twelve) months following the termination of your employment,\nyou shall not: (a) solicit, recruit, or induce any employee of the Company to leave their employment; or (b)\n--- PAGE 3 ---\nsolicit or attempt to divert any client or customer of the Company with whom you had material dealings\nduring the 12 months preceding termination.\n7. TERMINATION",
+      "explanation": "This clause states that for 12 months after termination, the employee cannot solicit or recruit any company employees, or divert any company clients or customers.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 6.2 of the document"
+    },
+    {
+      "clause_id": "clause_16",
+      "clause_title": "Termination by Employee",
+      "clause_type": "termination",
+      "original_text": "7.1 Termination by the Employee (Post-Probation): Upon confirmation of employment, you are\nrequired to give the Company a minimum notice period of 60 (sixty) days in writing. You may be asked\nto serve the entire notice period or part thereof, or the Company may waive the notice period at its\ndiscretion.",
+      "explanation": "This clause states that after probation, the employee must give 60 days' written notice before terminating employment, and may be required to serve the notice period or have it waived by the company.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 7.1 of the document"
+    },
+    {
+      "clause_id": "clause_17",
+      "clause_title": "Termination by Company",
+      "clause_type": "termination",
+      "original_text": "7.2 Termination by the Company (Post-Probation, Without Cause): The Company may terminate\nyour employment by providing 60 (sixty) days' written notice or payment of 60 days' basic salary in lieu\nof notice.",
+      "explanation": "This clause states that the company can terminate the employee's employment without cause by giving 60 days' written notice or paying 60 days' basic salary in lieu of notice.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 7.2 of the document"
+    },
+    {
+      "clause_id": "clause_18",
+      "clause_title": "Termination for Cause",
+      "clause_type": "termination",
+      "original_text": "7.3 Termination for Cause: The Company may terminate your employment immediately and without\nnotice or compensation in the event of: (a) gross misconduct; (b) wilful insubordination; (c) fraud,\ndishonesty, or breach of trust; (d) disclosure of Confidential Information; (e) violation of Company\npolicies; or (f) conviction of a criminal offence. All unvested ESOPs and any unpaid variable pay shall\nstand forfeited upon termination for cause.",
+      "explanation": "This clause states that the company can terminate the employee's employment immediately without notice or compensation if they commit gross misconduct, fraud, or other serious offenses, and all unvested ESOPs and unpaid variable pay will be forfeited.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 7.3 of the document"
+    },
+    {
+      "clause_id": "clause_19",
+      "clause_title": "Notice Buy-Out",
+      "clause_type": "termination",
+      "original_text": "7.4 Notice Buy-Out (Employee): If you choose to leave without serving the full notice period, you shall\npay the Company the equivalent of the shortfall in notice days at your then-current basic daily rate. The\nCompany may recover this amount from your final settlement or initiate legal recovery.\n8. MOONLIGHTING POLICY",
+      "explanation": "This clause states that if the employee leaves without serving the full notice period, they must pay the company the equivalent of the shortfall in notice days at their current basic daily rate, which can be recovered from their final settlement or through legal means.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 7.4 of the document"
+    },
+    {
+      "clause_id": "clause_20",
+      "clause_title": "Moonlighting Policy",
+      "clause_type": "non_standard",
+      "original_text": "8.1 You shall not, directly or indirectly, undertake any employment, consulting, freelance, advisory, or\ndirectorial role with any other entity (whether compensated or otherwise) without the prior written\napproval of the Company's HR department. Violation of this clause shall be treated as grounds for\nimmediate termination for cause under Clause 7.3.\n9. GOVERNING LAW AND DISPUTE RESOLUTION",
+      "explanation": "This clause states that the employee cannot take on any other employment or roles without prior written approval from the company's HR department, and violating this clause can lead to immediate termination for cause.",
+      "is_non_standard": true,
+      "grounding_statement": "This is based on Section 8.1 of the document"
+    },
+    {
+      "clause_id": "clause_21",
+      "clause_title": "Governing Law",
+      "clause_type": "jurisdiction",
+      "original_text": "9.1 This Contract shall be governed by the laws of India, including the Industrial Employment (Standing\nOrders) Act, 1946, and the applicable provisions of the Shops and Establishments Act.",
+      "explanation": "This clause states that the contract will be governed by the laws of India, including specific acts and provisions.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 9.1 of the document"
+    },
+    {
+      "clause_id": "clause_22",
+      "clause_title": "Dispute Resolution",
+      "clause_type": "jurisdiction",
+      "original_text": "9.2 Any dispute arising under or in connection with this Contract shall first be referred to internal HR\nmediation. If unresolved within 30 days, the dispute shall be submitted to binding arbitration under the\nArbitration and Conciliation Act, 1996, in Mumbai.\nBy signing below, you confirm that you have read, understood, and agree to be bound by all terms and\nconditions of this Contract.\nFor Nexova Technologies Pvt. Ltd.\nAccepted by:\n___________________________\n___________________________\nKavitha Rajagopal\nVP — People & Culture\nDate: ____________\nMr. Arjun Mehta\nDate: ____________",
+      "explanation": "This clause states that any disputes will first be referred to internal HR mediation, and if unresolved, will be submitted to binding arbitration under the Arbitration and Conciliation Act, 1996, in Mumbai.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 9.2 of the document"
+    }
+  ]
+}

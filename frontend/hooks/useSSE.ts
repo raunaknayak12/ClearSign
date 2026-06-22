@@ -40,6 +40,7 @@ const INITIAL_STATE: AnalysisState = {
   progressPercent: 0,
   progressMessage: "Analysing your document...",
   error: null,
+  analysisId: null,
 };
 
 /**
@@ -161,6 +162,7 @@ export function useSSE() {
               setState((prev) => ({
                 ...prev,
                 isComplete: true,
+                analysisId: doneData.analysis_id || null,
                 totalClauses: doneData.total_clauses || prev.clauses.length,
                 progressPercent: 100,
                 progressMessage: `Analysis complete — ${
@@ -192,5 +194,31 @@ export function useSSE() {
     setState(INITIAL_STATE);
   }, []);
 
-  return { state, consumeStream, reset };
+  /**
+   * Load a pre-analyzed document from cached data.
+   */
+  const loadAnalysis = useCallback((
+    analysisId: string,
+    documentType: string,
+    clauses: ClauseCard[]
+  ) => {
+    setState({
+      clauses: clauses.map(c => ({
+        ...c,
+        risk: c.risk || (c.is_non_standard ? "flag" : "standard")
+      })),
+      documentType,
+      documentTypeCode: getDocumentTypeCode(documentType),
+      pageCount: null,
+      fileName: `${documentType.toLowerCase().replace(/[^a-z0-9]+/g, "_")}.pdf`,
+      totalClauses: clauses.length,
+      isComplete: true,
+      progressPercent: 100,
+      progressMessage: `Analysis loaded — ${clauses.length} clauses covered`,
+      error: null,
+      analysisId,
+    });
+  }, []);
+
+  return { state, consumeStream, reset, loadAnalysis };
 }

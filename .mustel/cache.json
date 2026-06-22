@@ -1,0 +1,4469 @@
+{
+  "backend\\test_ddg_lite_parse_complete.py": {
+    "mtime": 1782155561.2853358,
+    "size": 2098,
+    "findings": [
+      {
+        "file": "backend\\test_ddg_lite_parse_complete.py",
+        "line": 7,
+        "col": 5,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_ddg_lite_parsing`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\test_ddg_lite_parse_complete.py",
+        "line": 11,
+        "col": 121,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (136 > 120)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\test_ddg_lite_parse_complete.py",
+        "line": 12,
+        "col": 121,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (145 > 120)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "backend\\app\\main.py": {
+    "mtime": 1782065981.5903902,
+    "size": 3946,
+    "findings": [
+      {
+        "file": "backend\\app\\main.py",
+        "line": 70,
+        "col": 11,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `rate_limit_middleware`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\main.py",
+        "line": 70,
+        "col": 51,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `call_next`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\main.py",
+        "line": 109,
+        "col": 11,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `health_check`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "backend\\app\\__init__.py": {
+    "mtime": 1781525998.032079,
+    "size": 33,
+    "findings": []
+  },
+  "backend\\app\\middleware\\file_validation.py": {
+    "mtime": 1781526127.9964185,
+    "size": 2373,
+    "findings": []
+  },
+  "backend\\app\\middleware\\__init__.py": {
+    "mtime": 1781526011.4879827,
+    "size": 28,
+    "findings": []
+  },
+  "backend\\app\\models\\enums.py": {
+    "mtime": 1781526043.0819538,
+    "size": 1289,
+    "findings": []
+  },
+  "backend\\app\\models\\request.py": {
+    "mtime": 1782155561.2863398,
+    "size": 1283,
+    "findings": []
+  },
+  "backend\\app\\models\\response.py": {
+    "mtime": 1781526061.9109817,
+    "size": 3830,
+    "findings": []
+  },
+  "backend\\app\\models\\__init__.py": {
+    "mtime": 1781526002.741484,
+    "size": 29,
+    "findings": []
+  },
+  "backend\\app\\prompts\\breakdown.py": {
+    "mtime": 1782066409.8232105,
+    "size": 3509,
+    "findings": [
+      {
+        "file": "backend\\app\\prompts\\breakdown.py",
+        "line": 13,
+        "col": 121,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (183 > 120)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\prompts\\breakdown.py",
+        "line": 16,
+        "col": 121,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (164 > 120)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\prompts\\breakdown.py",
+        "line": 17,
+        "col": 121,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (179 > 120)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\prompts\\breakdown.py",
+        "line": 28,
+        "col": 121,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (122 > 120)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "backend\\app\\prompts\\classifier.py": {
+    "mtime": 1781526166.1208158,
+    "size": 1183,
+    "findings": [
+      {
+        "file": "backend\\app\\prompts\\classifier.py",
+        "line": 10,
+        "col": 121,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (143 > 120)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "backend\\app\\prompts\\qa.py": {
+    "mtime": 1782061949.4619324,
+    "size": 3155,
+    "findings": [
+      {
+        "file": "backend\\app\\prompts\\qa.py",
+        "line": 11,
+        "col": 121,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (292 > 120)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\prompts\\qa.py",
+        "line": 30,
+        "col": 121,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (160 > 120)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\prompts\\qa.py",
+        "line": 34,
+        "col": 121,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (144 > 120)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "backend\\app\\prompts\\__init__.py": {
+    "mtime": 1781526009.4664922,
+    "size": 37,
+    "findings": []
+  },
+  "backend\\app\\routers\\analyse.py": {
+    "mtime": 1782156250.9552336,
+    "size": 12572,
+    "findings": [
+      {
+        "file": "backend\\app\\routers\\analyse.py",
+        "line": 87,
+        "col": 11,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `analyse_document`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\routers\\analyse.py",
+        "line": 87,
+        "col": 47,
+        "severity": "error",
+        "category": "bug",
+        "rule": "B008",
+        "message": "Do not perform function call `File` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\routers\\analyse.py",
+        "line": 91,
+        "col": 15,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN202",
+        "message": "Missing return type annotation for private function `generate_sse`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\routers\\analyse.py",
+        "line": 100,
+        "col": 25,
+        "severity": "high",
+        "category": "security",
+        "rule": "S324",
+        "message": "Probable use of insecure hash functions in `hashlib`: `md5`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\routers\\analyse.py",
+        "line": 292,
+        "col": 11,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `generate_report`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\routers\\analyse.py",
+        "line": 329,
+        "col": 11,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `get_analysis`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\routers\\analyse.py",
+        "line": 100,
+        "col": 1,
+        "severity": "medium",
+        "category": "security",
+        "rule": "hashlib-md5",
+        "message": "MD5 is a cryptographically broken hash algorithm. Do not use it for passwords, signatures, or security-sensitive data. Use hashlib.sha256() or hashlib.sha3_256() instead.",
+        "engine": "mustel-patterns",
+        "module_context": "hashlib",
+        "cwe": "CWE-327",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\routers\\analyse.py",
+        "line": 100,
+        "col": 1,
+        "severity": "warning",
+        "category": "security",
+        "rule": "hashlib-no-usedforsecurity",
+        "message": "If using MD5 or SHA-1 for non-security purposes (e.g. checksums), add usedforsecurity=False to suppress warnings and clarify intent: hashlib.md5(data, usedforsecurity=False).",
+        "engine": "mustel-patterns",
+        "module_context": "hashlib",
+        "cwe": "CWE-327",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\routers\\analyse.py",
+        "line": 48,
+        "col": 1,
+        "severity": "warning",
+        "category": "bug",
+        "rule": "json-load-file-unvalidated",
+        "message": "json.load() reads and parses a file without schema validation. For configuration files or API responses, validate the structure with a schema library (jsonschema, pydantic) to catch missing fields or type errors early.",
+        "engine": "mustel-patterns",
+        "module_context": "json",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "backend\\app\\routers\\qa.py": {
+    "mtime": 1782155561.2933419,
+    "size": 5030,
+    "findings": [
+      {
+        "file": "backend\\app\\routers\\qa.py",
+        "line": 36,
+        "col": 11,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `ask_question`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\routers\\qa.py",
+        "line": 43,
+        "col": 15,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN202",
+        "message": "Missing return type annotation for private function `generate_sse`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\routers\\qa.py",
+        "line": 98,
+        "col": 1,
+        "severity": "warning",
+        "category": "bug",
+        "rule": "json-loads-unvalidated",
+        "message": "json.loads() will raise json.JSONDecodeError on malformed input. Ensure you wrap calls in try/except json.JSONDecodeError when parsing untrusted input, and validate the structure of parsed data before using it.",
+        "engine": "mustel-patterns",
+        "module_context": "json",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "backend\\app\\routers\\__init__.py": {
+    "mtime": 1781526005.4086602,
+    "size": 29,
+    "findings": []
+  },
+  "backend\\app\\services\\classifier.py": {
+    "mtime": 1781526208.9708714,
+    "size": 2069,
+    "findings": [
+      {
+        "file": "backend\\app\\services\\classifier.py",
+        "line": 49,
+        "col": 1,
+        "severity": "warning",
+        "category": "bug",
+        "rule": "json-loads-unvalidated",
+        "message": "json.loads() will raise json.JSONDecodeError on malformed input. Ensure you wrap calls in try/except json.JSONDecodeError when parsing untrusted input, and validate the structure of parsed data before using it.",
+        "engine": "mustel-patterns",
+        "module_context": "json",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "backend\\app\\services\\clause_reconciler.py": {
+    "mtime": 1782066409.8232105,
+    "size": 2706,
+    "findings": [
+      {
+        "file": "backend\\app\\services\\clause_reconciler.py",
+        "line": 24,
+        "col": 1,
+        "severity": "warning",
+        "category": "bug",
+        "rule": "json-loads-unvalidated",
+        "message": "json.loads() will raise json.JSONDecodeError on malformed input. Ensure you wrap calls in try/except json.JSONDecodeError when parsing untrusted input, and validate the structure of parsed data before using it.",
+        "engine": "mustel-patterns",
+        "module_context": "json",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\services\\clause_reconciler.py",
+        "line": 36,
+        "col": 1,
+        "severity": "warning",
+        "category": "bug",
+        "rule": "json-loads-unvalidated",
+        "message": "json.loads() will raise json.JSONDecodeError on malformed input. Ensure you wrap calls in try/except json.JSONDecodeError when parsing untrusted input, and validate the structure of parsed data before using it.",
+        "engine": "mustel-patterns",
+        "module_context": "json",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "backend\\app\\services\\clause_segmenter.py": {
+    "mtime": 1782155561.2873359,
+    "size": 9281,
+    "findings": []
+  },
+  "backend\\app\\services\\extractor.py": {
+    "mtime": 1782155561.2933419,
+    "size": 5515,
+    "findings": []
+  },
+  "backend\\app\\services\\groq_client.py": {
+    "mtime": 1782155561.2903485,
+    "size": 6075,
+    "findings": []
+  },
+  "backend\\app\\services\\pdf_generator.py": {
+    "mtime": 1782155561.3227673,
+    "size": 16028,
+    "findings": [
+      {
+        "file": "backend\\app\\services\\pdf_generator.py",
+        "line": 70,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN204",
+        "message": "Missing return type annotation for special method `__init__`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\app\\services\\pdf_generator.py",
+        "line": 70,
+        "col": 24,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `width`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\services\\pdf_generator.py",
+        "line": 70,
+        "col": 31,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `thickness`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\services\\pdf_generator.py",
+        "line": 70,
+        "col": 44,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `color`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\services\\pdf_generator.py",
+        "line": 76,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `wrap`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\services\\pdf_generator.py",
+        "line": 76,
+        "col": 20,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `availWidth`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\services\\pdf_generator.py",
+        "line": 76,
+        "col": 32,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `availHeight`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\services\\pdf_generator.py",
+        "line": 79,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `draw`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\app\\services\\pdf_generator.py",
+        "line": 87,
+        "col": 5,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `add_footer`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\app\\services\\pdf_generator.py",
+        "line": 87,
+        "col": 16,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `canvas`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\services\\pdf_generator.py",
+        "line": 87,
+        "col": 24,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `doc`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\services\\pdf_generator.py",
+        "line": 100,
+        "col": 5,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `build_clause_card`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\services\\pdf_generator.py",
+        "line": 100,
+        "col": 23,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `clause`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\services\\pdf_generator.py",
+        "line": 100,
+        "col": 31,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `styles`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\services\\pdf_generator.py",
+        "line": 100,
+        "col": 39,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `content_width`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\services\\pdf_generator.py",
+        "line": 100,
+        "col": 54,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `index`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\services\\pdf_generator.py",
+        "line": 258,
+        "col": 5,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `generate_report_pdf`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\app\\services\\pdf_generator.py",
+        "line": 258,
+        "col": 37,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `stream`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\services\\pdf_generator.py",
+        "line": 387,
+        "col": 121,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (146 > 120)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "backend\\app\\services\\web_search.py": {
+    "mtime": 1782155561.3257678,
+    "size": 6489,
+    "findings": [
+      {
+        "file": "backend\\app\\services\\web_search.py",
+        "line": 61,
+        "col": 74,
+        "severity": "high",
+        "category": "security",
+        "rule": "S501",
+        "message": "Probable use of `httpx` call with `verify=False` disabling SSL certificate checks",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\services\\web_search.py",
+        "line": 112,
+        "col": 121,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (145 > 120)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\app\\services\\web_search.py",
+        "line": 170,
+        "col": 1,
+        "severity": "warning",
+        "category": "bug",
+        "rule": "asyncio-gather-no-return-exceptions",
+        "message": "asyncio.gather() without return_exceptions=True will cancel all remaining tasks if one raises an exception. Use return_exceptions=True and handle errors individually, or structure with try/except per awaitable.",
+        "engine": "mustel-patterns",
+        "module_context": "asyncio",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "backend\\app\\services\\__init__.py": {
+    "mtime": 1781526007.4536376,
+    "size": 41,
+    "findings": []
+  },
+  "backend\\tests\\test_clause_segmenter.py": {
+    "mtime": 1782066409.8212128,
+    "size": 5017,
+    "findings": [
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 48,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_same_text_produces_same_count`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 52,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 53,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 55,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_same_text_produces_same_refs`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 61,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 63,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_nda_subsections_detected`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 67,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 69,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_segments_contain_verbatim_text`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 73,
+        "col": 13,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 74,
+        "col": 13,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 76,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_empty_text_returns_empty`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 78,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 79,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 81,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_chunk_segments_never_splits_clause`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 86,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 88,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_chunk_segments_deterministic`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 93,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 95,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_section_headers_detected`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 108,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 109,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 110,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 112,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_paragraph_fallback_for_unstructured`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_clause_segmenter.py",
+        "line": 123,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "backend\\tests\\test_e2e.py": {
+    "mtime": 1782155561.2933419,
+    "size": 8155,
+    "findings": [
+      {
+        "file": "backend\\tests\\test_e2e.py",
+        "line": 8,
+        "col": 5,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `run_analyse`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_e2e.py",
+        "line": 23,
+        "col": 17,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_e2e.py",
+        "line": 24,
+        "col": 17,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_e2e.py",
+        "line": 77,
+        "col": 17,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_e2e.py",
+        "line": 78,
+        "col": 17,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_e2e.py",
+        "line": 79,
+        "col": 17,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_e2e.py",
+        "line": 85,
+        "col": 5,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `run_qa`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_e2e.py",
+        "line": 85,
+        "col": 12,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `clauses`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_e2e.py",
+        "line": 85,
+        "col": 21,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `doc_type`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_e2e.py",
+        "line": 115,
+        "col": 13,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_e2e.py",
+        "line": 143,
+        "col": 13,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_e2e.py",
+        "line": 147,
+        "col": 5,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_validation_415`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_e2e.py",
+        "line": 157,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_e2e.py",
+        "line": 161,
+        "col": 5,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_validation_413`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_e2e.py",
+        "line": 172,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_e2e.py",
+        "line": 176,
+        "col": 5,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_qa_validation`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_e2e.py",
+        "line": 191,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_e2e.py",
+        "line": 41,
+        "col": 1,
+        "severity": "warning",
+        "category": "bug",
+        "rule": "json-loads-unvalidated",
+        "message": "json.loads() will raise json.JSONDecodeError on malformed input. Ensure you wrap calls in try/except json.JSONDecodeError when parsing untrusted input, and validate the structure of parsed data before using it.",
+        "engine": "mustel-patterns",
+        "module_context": "json",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_e2e.py",
+        "line": 128,
+        "col": 1,
+        "severity": "warning",
+        "category": "bug",
+        "rule": "json-loads-unvalidated",
+        "message": "json.loads() will raise json.JSONDecodeError on malformed input. Ensure you wrap calls in try/except json.JSONDecodeError when parsing untrusted input, and validate the structure of parsed data before using it.",
+        "engine": "mustel-patterns",
+        "module_context": "json",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "backend\\tests\\test_extractor.py": {
+    "mtime": 1782155561.288334,
+    "size": 2686,
+    "findings": [
+      {
+        "file": "backend\\tests\\test_extractor.py",
+        "line": 15,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_short_text_returns_single_chunk`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_extractor.py",
+        "line": 19,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_extractor.py",
+        "line": 20,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_extractor.py",
+        "line": 22,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_long_text_produces_multiple_chunks`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_extractor.py",
+        "line": 27,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_extractor.py",
+        "line": 29,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_chunks_have_overlap`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_extractor.py",
+        "line": 36,
+        "col": 13,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_extractor.py",
+        "line": 37,
+        "col": 13,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_extractor.py",
+        "line": 39,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_empty_text_returns_single_chunk`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_extractor.py",
+        "line": 42,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_extractor.py",
+        "line": 52,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_empty_pdf_raises_error`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_extractor.py",
+        "line": 62,
+        "col": 19,
+        "severity": "warning",
+        "category": "style",
+        "rule": "W291",
+        "message": "Trailing whitespace",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_extractor.py",
+        "line": 63,
+        "col": 19,
+        "severity": "warning",
+        "category": "style",
+        "rule": "W291",
+        "message": "Trailing whitespace",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_extractor.py",
+        "line": 64,
+        "col": 19,
+        "severity": "warning",
+        "category": "style",
+        "rule": "W291",
+        "message": "Trailing whitespace",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_extractor.py",
+        "line": 65,
+        "col": 19,
+        "severity": "warning",
+        "category": "style",
+        "rule": "W291",
+        "message": "Trailing whitespace",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      }
+    ]
+  },
+  "backend\\tests\\test_multi_upload.py": {
+    "mtime": 1782155561.29434,
+    "size": 4568,
+    "findings": [
+      {
+        "file": "backend\\tests\\test_multi_upload.py",
+        "line": 17,
+        "col": 5,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_consecutive_uploads_determinism`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_multi_upload.py",
+        "line": 26,
+        "col": 17,
+        "severity": "high",
+        "category": "security",
+        "rule": "S324",
+        "message": "Probable use of insecure hash functions in `hashlib`: `md5`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_multi_upload.py",
+        "line": 37,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN202",
+        "message": "Missing return type annotation for private function `do_upload`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_multi_upload.py",
+        "line": 43,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_multi_upload.py",
+        "line": 85,
+        "col": 5,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_multi_upload.py",
+        "line": 104,
+        "col": 5,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_multi_upload.py",
+        "line": 105,
+        "col": 5,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_multi_upload.py",
+        "line": 106,
+        "col": 5,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_multi_upload.py",
+        "line": 107,
+        "col": 5,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_multi_upload.py",
+        "line": 26,
+        "col": 1,
+        "severity": "medium",
+        "category": "security",
+        "rule": "hashlib-md5",
+        "message": "MD5 is a cryptographically broken hash algorithm. Do not use it for passwords, signatures, or security-sensitive data. Use hashlib.sha256() or hashlib.sha3_256() instead.",
+        "engine": "mustel-patterns",
+        "module_context": "hashlib",
+        "cwe": "CWE-327",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_multi_upload.py",
+        "line": 26,
+        "col": 1,
+        "severity": "warning",
+        "category": "security",
+        "rule": "hashlib-no-usedforsecurity",
+        "message": "If using MD5 or SHA-1 for non-security purposes (e.g. checksums), add usedforsecurity=False to suppress warnings and clarify intent: hashlib.md5(data, usedforsecurity=False).",
+        "engine": "mustel-patterns",
+        "module_context": "hashlib",
+        "cwe": "CWE-327",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_multi_upload.py",
+        "line": 55,
+        "col": 1,
+        "severity": "warning",
+        "category": "bug",
+        "rule": "json-loads-unvalidated",
+        "message": "json.loads() will raise json.JSONDecodeError on malformed input. Ensure you wrap calls in try/except json.JSONDecodeError when parsing untrusted input, and validate the structure of parsed data before using it.",
+        "engine": "mustel-patterns",
+        "module_context": "json",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "backend\\tests\\test_reconcile.py": {
+    "mtime": 1782066409.8182116,
+    "size": 3121,
+    "findings": [
+      {
+        "file": "backend\\tests\\test_reconcile.py",
+        "line": 22,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_reconcile_fills_missing_llm_clauses`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_reconcile.py",
+        "line": 27,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_reconcile.py",
+        "line": 28,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_reconcile.py",
+        "line": 29,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_reconcile.py",
+        "line": 31,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_reconcile_ignores_extra_llm_clauses`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_reconcile.py",
+        "line": 39,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_reconcile.py",
+        "line": 41,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_reconcile_preserves_structural_text`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_reconcile.py",
+        "line": 53,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_reconcile.py",
+        "line": 54,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_reconcile.py",
+        "line": 60,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_parses_clean_array`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_reconcile.py",
+        "line": 63,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_reconcile.py",
+        "line": 64,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_reconcile.py",
+        "line": 66,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_strips_markdown_fences`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_reconcile.py",
+        "line": 69,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_reconcile.py",
+        "line": 71,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_repairs_truncated_array`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_reconcile.py",
+        "line": 74,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_reconcile.py",
+        "line": 76,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_empty_returns_empty_list`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_reconcile.py",
+        "line": 77,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_reconcile.py",
+        "line": 78,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "backend\\tests\\test_routers.py": {
+    "mtime": 1782155561.3127522,
+    "size": 5472,
+    "findings": [
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 17,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_health_returns_ok`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 20,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 22,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 23,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 29,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_unsupported_mime_returns_415`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 35,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 37,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_oversized_file_returns_413`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 45,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 51,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_question_too_long_returns_422`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 62,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 64,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_valid_qa_request_accepted`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 78,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 84,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_generate_report_ok`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 103,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 104,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 105,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 107,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 113,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_get_analysis_not_found`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 116,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 118,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_get_analysis_ok`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 150,
+        "col": 13,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 152,
+        "col": 13,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_routers.py",
+        "line": 153,
+        "col": 13,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "backend\\tests\\test_web_search.py": {
+    "mtime": 1782155561.3058605,
+    "size": 716,
+    "findings": [
+      {
+        "file": "backend\\tests\\test_web_search.py",
+        "line": 9,
+        "col": 11,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `test_search_ddg_returns_results`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "backend\\tests\\test_web_search.py",
+        "line": 14,
+        "col": 5,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_web_search.py",
+        "line": 17,
+        "col": 9,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_web_search.py",
+        "line": 19,
+        "col": 13,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_web_search.py",
+        "line": 20,
+        "col": 13,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_web_search.py",
+        "line": 21,
+        "col": 13,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "backend\\tests\\test_web_search.py",
+        "line": 22,
+        "col": 13,
+        "severity": "high",
+        "category": "security",
+        "rule": "S101",
+        "message": "Use of `assert` detected",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "backend\\tests\\__init__.py": {
+    "mtime": 1781526301.748432,
+    "size": 21,
+    "findings": []
+  },
+  "frontend\\api\\_backend\\app\\main.py": {
+    "mtime": 1782065981.5903902,
+    "size": 3946,
+    "findings": [
+      {
+        "file": "frontend\\api\\_backend\\app\\main.py",
+        "line": 38,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (91 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\main.py",
+        "line": 70,
+        "col": 11,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `rate_limit_middleware`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\main.py",
+        "line": 70,
+        "col": 51,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `call_next`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\main.py",
+        "line": 109,
+        "col": 11,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `health_check`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "frontend\\api\\_backend\\app\\__init__.py": {
+    "mtime": 1781525998.032079,
+    "size": 33,
+    "findings": []
+  },
+  "frontend\\api\\_backend\\app\\middleware\\file_validation.py": {
+    "mtime": 1781526127.9964185,
+    "size": 2373,
+    "findings": []
+  },
+  "frontend\\api\\_backend\\app\\middleware\\__init__.py": {
+    "mtime": 1781526011.4879827,
+    "size": 28,
+    "findings": []
+  },
+  "frontend\\api\\_backend\\app\\models\\enums.py": {
+    "mtime": 1781526043.0819538,
+    "size": 1289,
+    "findings": []
+  },
+  "frontend\\api\\_backend\\app\\models\\request.py": {
+    "mtime": 1782155561.2863398,
+    "size": 1283,
+    "findings": []
+  },
+  "frontend\\api\\_backend\\app\\models\\response.py": {
+    "mtime": 1781526061.9109817,
+    "size": 3830,
+    "findings": [
+      {
+        "file": "frontend\\api\\_backend\\app\\models\\response.py",
+        "line": 41,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (102 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\models\\response.py",
+        "line": 83,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (92 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "frontend\\api\\_backend\\app\\models\\__init__.py": {
+    "mtime": 1781526002.741484,
+    "size": 29,
+    "findings": []
+  },
+  "frontend\\api\\_backend\\app\\prompts\\breakdown.py": {
+    "mtime": 1782066409.8232105,
+    "size": 3509,
+    "findings": [
+      {
+        "file": "frontend\\api\\_backend\\app\\prompts\\breakdown.py",
+        "line": 13,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (183 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\prompts\\breakdown.py",
+        "line": 16,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (164 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\prompts\\breakdown.py",
+        "line": 17,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (179 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\prompts\\breakdown.py",
+        "line": 19,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (94 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\prompts\\breakdown.py",
+        "line": 28,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (122 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\prompts\\breakdown.py",
+        "line": 30,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (93 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\prompts\\breakdown.py",
+        "line": 38,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (90 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "frontend\\api\\_backend\\app\\prompts\\classifier.py": {
+    "mtime": 1781526166.1208158,
+    "size": 1183,
+    "findings": [
+      {
+        "file": "frontend\\api\\_backend\\app\\prompts\\classifier.py",
+        "line": 10,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (143 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "frontend\\api\\_backend\\app\\prompts\\qa.py": {
+    "mtime": 1782061949.4619324,
+    "size": 3155,
+    "findings": [
+      {
+        "file": "frontend\\api\\_backend\\app\\prompts\\qa.py",
+        "line": 11,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (292 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\prompts\\qa.py",
+        "line": 19,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (101 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\prompts\\qa.py",
+        "line": 24,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (115 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\prompts\\qa.py",
+        "line": 27,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (115 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\prompts\\qa.py",
+        "line": 28,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (112 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\prompts\\qa.py",
+        "line": 30,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (160 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\prompts\\qa.py",
+        "line": 31,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (92 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\prompts\\qa.py",
+        "line": 32,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (119 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\prompts\\qa.py",
+        "line": 34,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (144 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\prompts\\qa.py",
+        "line": 44,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (102 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "frontend\\api\\_backend\\app\\prompts\\__init__.py": {
+    "mtime": 1781526009.4664922,
+    "size": 37,
+    "findings": []
+  },
+  "frontend\\api\\_backend\\app\\routers\\analyse.py": {
+    "mtime": 1782156250.9552336,
+    "size": 12572,
+    "findings": [
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\analyse.py",
+        "line": 38,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (94 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\analyse.py",
+        "line": 87,
+        "col": 11,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `analyse_document`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\analyse.py",
+        "line": 87,
+        "col": 47,
+        "severity": "error",
+        "category": "bug",
+        "rule": "B008",
+        "message": "Do not perform function call `File` in argument defaults; instead, perform the call within the function, or read the default from a module-level singleton variable",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\analyse.py",
+        "line": 91,
+        "col": 15,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN202",
+        "message": "Missing return type annotation for private function `generate_sse`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\analyse.py",
+        "line": 100,
+        "col": 25,
+        "severity": "high",
+        "category": "security",
+        "rule": "S324",
+        "message": "Probable use of insecure hash functions in `hashlib`: `md5`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\analyse.py",
+        "line": 148,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (111 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\analyse.py",
+        "line": 169,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (117 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\analyse.py",
+        "line": 193,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (98 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\analyse.py",
+        "line": 197,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (97 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\analyse.py",
+        "line": 208,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (111 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\analyse.py",
+        "line": 220,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (97 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\analyse.py",
+        "line": 267,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (107 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\analyse.py",
+        "line": 275,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (100 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\analyse.py",
+        "line": 292,
+        "col": 11,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `generate_report`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\analyse.py",
+        "line": 325,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (110 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\analyse.py",
+        "line": 329,
+        "col": 11,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `get_analysis`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\analyse.py",
+        "line": 100,
+        "col": 1,
+        "severity": "medium",
+        "category": "security",
+        "rule": "hashlib-md5",
+        "message": "MD5 is a cryptographically broken hash algorithm. Do not use it for passwords, signatures, or security-sensitive data. Use hashlib.sha256() or hashlib.sha3_256() instead.",
+        "engine": "mustel-patterns",
+        "module_context": "hashlib",
+        "cwe": "CWE-327",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\analyse.py",
+        "line": 100,
+        "col": 1,
+        "severity": "warning",
+        "category": "security",
+        "rule": "hashlib-no-usedforsecurity",
+        "message": "If using MD5 or SHA-1 for non-security purposes (e.g. checksums), add usedforsecurity=False to suppress warnings and clarify intent: hashlib.md5(data, usedforsecurity=False).",
+        "engine": "mustel-patterns",
+        "module_context": "hashlib",
+        "cwe": "CWE-327",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\analyse.py",
+        "line": 48,
+        "col": 1,
+        "severity": "warning",
+        "category": "bug",
+        "rule": "json-load-file-unvalidated",
+        "message": "json.load() reads and parses a file without schema validation. For configuration files or API responses, validate the structure with a schema library (jsonschema, pydantic) to catch missing fields or type errors early.",
+        "engine": "mustel-patterns",
+        "module_context": "json",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "frontend\\api\\_backend\\app\\routers\\qa.py": {
+    "mtime": 1782155561.2933419,
+    "size": 5030,
+    "findings": [
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\qa.py",
+        "line": 36,
+        "col": 11,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `ask_question`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\qa.py",
+        "line": 43,
+        "col": 15,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN202",
+        "message": "Missing return type annotation for private function `generate_sse`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\qa.py",
+        "line": 47,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (99 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\qa.py",
+        "line": 102,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (95 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\qa.py",
+        "line": 132,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (104 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\routers\\qa.py",
+        "line": 98,
+        "col": 1,
+        "severity": "warning",
+        "category": "bug",
+        "rule": "json-loads-unvalidated",
+        "message": "json.loads() will raise json.JSONDecodeError on malformed input. Ensure you wrap calls in try/except json.JSONDecodeError when parsing untrusted input, and validate the structure of parsed data before using it.",
+        "engine": "mustel-patterns",
+        "module_context": "json",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "frontend\\api\\_backend\\app\\routers\\__init__.py": {
+    "mtime": 1781526005.4086602,
+    "size": 29,
+    "findings": []
+  },
+  "frontend\\api\\_backend\\app\\services\\classifier.py": {
+    "mtime": 1781526208.9708714,
+    "size": 2069,
+    "findings": [
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\classifier.py",
+        "line": 49,
+        "col": 1,
+        "severity": "warning",
+        "category": "bug",
+        "rule": "json-loads-unvalidated",
+        "message": "json.loads() will raise json.JSONDecodeError on malformed input. Ensure you wrap calls in try/except json.JSONDecodeError when parsing untrusted input, and validate the structure of parsed data before using it.",
+        "engine": "mustel-patterns",
+        "module_context": "json",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "frontend\\api\\_backend\\app\\services\\clause_reconciler.py": {
+    "mtime": 1782066409.8232105,
+    "size": 2706,
+    "findings": [
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\clause_reconciler.py",
+        "line": 70,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (105 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\clause_reconciler.py",
+        "line": 73,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (91 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\clause_reconciler.py",
+        "line": 24,
+        "col": 1,
+        "severity": "warning",
+        "category": "bug",
+        "rule": "json-loads-unvalidated",
+        "message": "json.loads() will raise json.JSONDecodeError on malformed input. Ensure you wrap calls in try/except json.JSONDecodeError when parsing untrusted input, and validate the structure of parsed data before using it.",
+        "engine": "mustel-patterns",
+        "module_context": "json",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\clause_reconciler.py",
+        "line": 36,
+        "col": 1,
+        "severity": "warning",
+        "category": "bug",
+        "rule": "json-loads-unvalidated",
+        "message": "json.loads() will raise json.JSONDecodeError on malformed input. Ensure you wrap calls in try/except json.JSONDecodeError when parsing untrusted input, and validate the structure of parsed data before using it.",
+        "engine": "mustel-patterns",
+        "module_context": "json",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "frontend\\api\\_backend\\app\\services\\clause_segmenter.py": {
+    "mtime": 1782155561.2873359,
+    "size": 9281,
+    "findings": [
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\clause_segmenter.py",
+        "line": 100,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (98 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\clause_segmenter.py",
+        "line": 133,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (101 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\clause_segmenter.py",
+        "line": 147,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (95 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\clause_segmenter.py",
+        "line": 290,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (105 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "frontend\\api\\_backend\\app\\services\\extractor.py": {
+    "mtime": 1782155561.2933419,
+    "size": 5515,
+    "findings": [
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\extractor.py",
+        "line": 154,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (94 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "frontend\\api\\_backend\\app\\services\\groq_client.py": {
+    "mtime": 1782155561.2903485,
+    "size": 6075,
+    "findings": [
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\groq_client.py",
+        "line": 142,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (90 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "frontend\\api\\_backend\\app\\services\\__init__.py": {
+    "mtime": 1781526007.4536376,
+    "size": 41,
+    "findings": []
+  },
+  "frontend\\next-env.d.ts": {
+    "mtime": 1781525899.7708375,
+    "size": 228,
+    "findings": []
+  },
+  "frontend\\tailwind.config.ts": {
+    "mtime": 1781726863.2138567,
+    "size": 2279,
+    "findings": []
+  },
+  "frontend\\.next\\server\\interception-route-rewrite-manifest.js": {
+    "mtime": 1782155711.1673808,
+    "size": 48,
+    "findings": []
+  },
+  "frontend\\.next\\server\\middleware-build-manifest.js": {
+    "mtime": 1782155715.6064088,
+    "size": 888,
+    "findings": []
+  },
+  "frontend\\.next\\server\\middleware-react-loadable-manifest.js": {
+    "mtime": 1782155715.6011996,
+    "size": 36,
+    "findings": []
+  },
+  "frontend\\.next\\server\\next-font-manifest.js": {
+    "mtime": 1782155715.6064088,
+    "size": 106,
+    "findings": []
+  },
+  "frontend\\.next\\server\\server-reference-manifest.js": {
+    "mtime": 1782155708.5678768,
+    "size": 123,
+    "findings": []
+  },
+  "frontend\\.next\\server\\webpack-runtime.js": {
+    "mtime": 1782155708.5588753,
+    "size": 1469,
+    "findings": []
+  },
+  "frontend\\.next\\server\\app\\analyse\\page.js": {
+    "mtime": 1782155708.5658784,
+    "size": 87223,
+    "findings": []
+  },
+  "frontend\\.next\\server\\app\\analyse\\page_client-reference-manifest.js": {
+    "mtime": 1782155715.6064088,
+    "size": 5636,
+    "findings": []
+  },
+  "frontend\\.next\\server\\vendor-chunks\\@floating-ui.js": {
+    "mtime": 1782154532.975423,
+    "size": 249221,
+    "findings": []
+  },
+  "frontend\\.next\\server\\vendor-chunks\\@radix-ui.js": {
+    "mtime": 1782154532.9799583,
+    "size": 496081,
+    "findings": []
+  },
+  "frontend\\.next\\server\\vendor-chunks\\@swc.js": {
+    "mtime": 1782154532.975423,
+    "size": 13937,
+    "findings": []
+  },
+  "frontend\\.next\\server\\vendor-chunks\\class-variance-authority.js": {
+    "mtime": 1782154532.9764204,
+    "size": 9764,
+    "findings": []
+  },
+  "frontend\\.next\\server\\vendor-chunks\\clsx.js": {
+    "mtime": 1782154532.9764204,
+    "size": 2800,
+    "findings": []
+  },
+  "frontend\\.next\\server\\vendor-chunks\\framer-motion.js": {
+    "mtime": 1782154532.9744155,
+    "size": 447820,
+    "findings": []
+  },
+  "frontend\\.next\\server\\vendor-chunks\\lucide-react.js": {
+    "mtime": 1782154532.9724145,
+    "size": 108253,
+    "findings": []
+  },
+  "frontend\\.next\\server\\vendor-chunks\\motion-dom.js": {
+    "mtime": 1782154532.9734154,
+    "size": 1229030,
+    "findings": []
+  },
+  "frontend\\.next\\server\\vendor-chunks\\motion-utils.js": {
+    "mtime": 1782154532.9724145,
+    "size": 64486,
+    "findings": []
+  },
+  "frontend\\.next\\server\\vendor-chunks\\next.js": {
+    "mtime": 1782154532.9799583,
+    "size": 2315213,
+    "findings": []
+  },
+  "frontend\\.next\\server\\vendor-chunks\\tailwind-merge.js": {
+    "mtime": 1782154532.9764204,
+    "size": 281805,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\app-pages-internals.js": {
+    "mtime": 1782154536.8314366,
+    "size": 135491,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\main-app.js": {
+    "mtime": 1782154536.8349645,
+    "size": 6035493,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\polyfills.js": {
+    "mtime": 1782154489.7654,
+    "size": 112594,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\webpack.js": {
+    "mtime": 1782154536.831947,
+    "size": 56325,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\app\\layout.js": {
+    "mtime": 1782154536.8329592,
+    "size": 2447058,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\app\\analyse\\page.js": {
+    "mtime": 1782154536.850493,
+    "size": 3536868,
+    "findings": []
+  },
+  "frontend\\.next\\static\\development\\_buildManifest.js": {
+    "mtime": 1782154536.8526144,
+    "size": 243,
+    "findings": []
+  },
+  "frontend\\.next\\static\\development\\_ssgManifest.js": {
+    "mtime": 1782154536.8526144,
+    "size": 76,
+    "findings": []
+  },
+  "frontend\\.next\\types\\app\\layout.ts": {
+    "mtime": 1782155708.5708766,
+    "size": 3493,
+    "findings": []
+  },
+  "frontend\\.next\\types\\app\\analyse\\page.ts": {
+    "mtime": 1782155708.572393,
+    "size": 3511,
+    "findings": []
+  },
+  "frontend\\app\\layout.tsx": {
+    "mtime": 1781696405.062437,
+    "size": 1898,
+    "findings": []
+  },
+  "frontend\\app\\page.tsx": {
+    "mtime": 1781726841.954917,
+    "size": 3234,
+    "findings": []
+  },
+  "frontend\\app\\analyse\\page.tsx": {
+    "mtime": 1782155694.9952517,
+    "size": 19354,
+    "findings": []
+  },
+  "frontend\\components\\results\\ClauseCard.tsx": {
+    "mtime": 1781803413.9317765,
+    "size": 5937,
+    "findings": []
+  },
+  "frontend\\components\\results\\ClauseList.tsx": {
+    "mtime": 1781808381.6433327,
+    "size": 3371,
+    "findings": []
+  },
+  "frontend\\components\\results\\QAPanel.tsx": {
+    "mtime": 1781803432.7321131,
+    "size": 7766,
+    "findings": []
+  },
+  "frontend\\components\\results\\ResultsHeader.tsx": {
+    "mtime": 1781894275.8904502,
+    "size": 6513,
+    "findings": []
+  },
+  "frontend\\components\\shared\\Disclaimer.tsx": {
+    "mtime": 1781526448.2892551,
+    "size": 724,
+    "findings": []
+  },
+  "frontend\\components\\ui\\accordion-demo.tsx": {
+    "mtime": 1781800687.9524648,
+    "size": 2226,
+    "findings": []
+  },
+  "frontend\\components\\ui\\accordion.tsx": {
+    "mtime": 1781719145.1801527,
+    "size": 1992,
+    "findings": []
+  },
+  "frontend\\components\\ui\\ai-chat.tsx": {
+    "mtime": 1782061932.697059,
+    "size": 13161,
+    "findings": []
+  },
+  "frontend\\components\\ui\\ai-input.tsx": {
+    "mtime": 1781699323.9361327,
+    "size": 16592,
+    "findings": []
+  },
+  "frontend\\components\\ui\\avatar.tsx": {
+    "mtime": 1781719150.0044334,
+    "size": 1421,
+    "findings": []
+  },
+  "frontend\\components\\ui\\background-components.tsx": {
+    "mtime": 1781694600.1584105,
+    "size": 486,
+    "findings": []
+  },
+  "frontend\\components\\ui\\badge.tsx": {
+    "mtime": 1781799525.487842,
+    "size": 1631,
+    "findings": []
+  },
+  "frontend\\components\\ui\\button.tsx": {
+    "mtime": 1781637088.0180106,
+    "size": 1837,
+    "findings": []
+  },
+  "frontend\\components\\ui\\collapsible.tsx": {
+    "mtime": 1781719154.9749656,
+    "size": 329,
+    "findings": []
+  },
+  "frontend\\components\\ui\\demo.tsx": {
+    "mtime": 1781800682.5313344,
+    "size": 600,
+    "findings": []
+  },
+  "frontend\\components\\ui\\dock.tsx": {
+    "mtime": 1781811674.6814907,
+    "size": 3878,
+    "findings": []
+  },
+  "frontend\\components\\ui\\footer.tsx": {
+    "mtime": 1781794285.8991334,
+    "size": 4169,
+    "findings": []
+  },
+  "frontend\\components\\ui\\input.tsx": {
+    "mtime": 1781726920.7956984,
+    "size": 829,
+    "findings": []
+  },
+  "frontend\\components\\ui\\label.tsx": {
+    "mtime": 1781726746.182487,
+    "size": 725,
+    "findings": []
+  },
+  "frontend\\components\\ui\\myna-hero.tsx": {
+    "mtime": 1781730653.1469054,
+    "size": 7463,
+    "findings": []
+  },
+  "frontend\\components\\ui\\sheet.tsx": {
+    "mtime": 1781726741.194505,
+    "size": 4285,
+    "findings": []
+  },
+  "frontend\\components\\ui\\tooltip.tsx": {
+    "mtime": 1781813886.4067712,
+    "size": 1180,
+    "findings": []
+  },
+  "frontend\\components\\upload\\DropZone.tsx": {
+    "mtime": 1781726820.5392268,
+    "size": 6504,
+    "findings": []
+  },
+  "frontend\\hooks\\useFileUpload.ts": {
+    "mtime": 1781526403.9136462,
+    "size": 2622,
+    "findings": []
+  },
+  "frontend\\hooks\\useSSE.ts": {
+    "mtime": 1782154291.5333805,
+    "size": 6454,
+    "findings": []
+  },
+  "frontend\\lib\\api.ts": {
+    "mtime": 1782121375.4882572,
+    "size": 3220,
+    "findings": []
+  },
+  "frontend\\lib\\constants.ts": {
+    "mtime": 1782155892.773974,
+    "size": 3883,
+    "findings": []
+  },
+  "frontend\\lib\\fileStore.ts": {
+    "mtime": 1781526860.02522,
+    "size": 907,
+    "findings": []
+  },
+  "frontend\\lib\\utils.ts": {
+    "mtime": 1781637082.427697,
+    "size": 166,
+    "findings": []
+  },
+  "frontend\\types\\index.ts": {
+    "mtime": 1782154253.59705,
+    "size": 1981,
+    "findings": []
+  },
+  "frontend\\api\\index.py": {
+    "mtime": 1782155873.9915168,
+    "size": 194,
+    "findings": [
+      {
+        "file": "frontend\\api\\index.py",
+        "line": 7,
+        "col": 22,
+        "severity": "error",
+        "category": "bug",
+        "rule": "F401",
+        "message": "`app.main.app` imported but unused",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      }
+    ]
+  },
+  "frontend\\api\\_backend\\app\\services\\pdf_generator.py": {
+    "mtime": 1782155561.3227673,
+    "size": 16028,
+    "findings": [
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 13,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (110 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 57,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (101 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 58,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (96 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 59,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (116 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 60,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (106 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 61,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (110 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 62,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (104 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 63,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (104 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 64,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (93 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 70,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN204",
+        "message": "Missing return type annotation for special method `__init__`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 70,
+        "col": 24,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `width`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 70,
+        "col": 31,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `thickness`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 70,
+        "col": 44,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `color`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 76,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `wrap`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 76,
+        "col": 20,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `availWidth`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 76,
+        "col": 32,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `availHeight`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 79,
+        "col": 9,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `draw`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 87,
+        "col": 5,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `add_footer`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 87,
+        "col": 16,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `canvas`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 87,
+        "col": 24,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `doc`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 96,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (89 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 100,
+        "col": 5,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `build_clause_card`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 100,
+        "col": 23,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `clause`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 100,
+        "col": 31,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `styles`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 100,
+        "col": 39,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `content_width`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 100,
+        "col": 54,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `index`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 158,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (97 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 203,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (110 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 243,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (90 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 258,
+        "col": 5,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN201",
+        "message": "Missing return type annotation for public function `generate_report_pdf`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 258,
+        "col": 37,
+        "severity": "warning",
+        "category": "style",
+        "rule": "ANN001",
+        "message": "Missing type annotation for function argument `stream`",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 307,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (105 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 362,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (99 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 387,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (146 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 392,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (94 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\pdf_generator.py",
+        "line": 428,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (118 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "frontend\\api\\_backend\\app\\services\\web_search.py": {
+    "mtime": 1782155561.3257678,
+    "size": 6489,
+    "findings": [
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\web_search.py",
+        "line": 55,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (95 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\web_search.py",
+        "line": 61,
+        "col": 74,
+        "severity": "high",
+        "category": "security",
+        "rule": "S501",
+        "message": "Probable use of `httpx` call with `verify=False` disabling SSL certificate checks",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\web_search.py",
+        "line": 61,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (97 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\web_search.py",
+        "line": 78,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (102 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\web_search.py",
+        "line": 95,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (102 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\web_search.py",
+        "line": 102,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (89 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\web_search.py",
+        "line": 112,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (145 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\web_search.py",
+        "line": 144,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (104 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\web_search.py",
+        "line": 169,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (101 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "frontend\\api\\_backend\\app\\services\\web_search.py",
+        "line": 170,
+        "col": 1,
+        "severity": "warning",
+        "category": "bug",
+        "rule": "asyncio-gather-no-return-exceptions",
+        "message": "asyncio.gather() without return_exceptions=True will cancel all remaining tasks if one raises an exception. Use return_exceptions=True and handle errors individually, or structure with try/except per awaitable.",
+        "engine": "mustel-patterns",
+        "module_context": "asyncio",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  },
+  "frontend\\.next\\server\\app\\page.js": {
+    "mtime": 1782155708.5608773,
+    "size": 76581,
+    "findings": []
+  },
+  "frontend\\.next\\server\\app\\page_client-reference-manifest.js": {
+    "mtime": 1782155715.6064088,
+    "size": 5351,
+    "findings": []
+  },
+  "frontend\\.next\\server\\app\\favicon.ico\\route.js": {
+    "mtime": 1782155708.5608773,
+    "size": 80236,
+    "findings": []
+  },
+  "frontend\\.next\\server\\app\\_not-found\\page.js": {
+    "mtime": 1782155708.5618765,
+    "size": 7432,
+    "findings": []
+  },
+  "frontend\\.next\\server\\app\\_not-found\\page_client-reference-manifest.js": {
+    "mtime": 1782155715.6064088,
+    "size": 5446,
+    "findings": []
+  },
+  "frontend\\.next\\server\\chunks\\103.js": {
+    "mtime": 1782155708.559875,
+    "size": 9429,
+    "findings": []
+  },
+  "frontend\\.next\\server\\chunks\\682.js": {
+    "mtime": 1782155708.5588753,
+    "size": 33636,
+    "findings": []
+  },
+  "frontend\\.next\\server\\chunks\\746.js": {
+    "mtime": 1782155708.5578778,
+    "size": 263463,
+    "findings": []
+  },
+  "frontend\\.next\\server\\chunks\\946.js": {
+    "mtime": 1782155708.559875,
+    "size": 61630,
+    "findings": []
+  },
+  "frontend\\.next\\server\\chunks\\948.js": {
+    "mtime": 1782155708.5578778,
+    "size": 57650,
+    "findings": []
+  },
+  "frontend\\.next\\server\\pages\\_app.js": {
+    "mtime": 1782155708.5588753,
+    "size": 3291,
+    "findings": []
+  },
+  "frontend\\.next\\server\\pages\\_document.js": {
+    "mtime": 1782155708.559875,
+    "size": 378,
+    "findings": []
+  },
+  "frontend\\.next\\server\\pages\\_error.js": {
+    "mtime": 1782155708.5588753,
+    "size": 8619,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\117-ccfd45bc16f40e92.js": {
+    "mtime": 1782155715.5986912,
+    "size": 124364,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\145-aaac2fc25f3f1c02.js": {
+    "mtime": 1782155715.602113,
+    "size": 14205,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\187-45e3eab600842846.js": {
+    "mtime": 1782155715.5986912,
+    "size": 134883,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\269-c01f27b80cf9c9e3.js": {
+    "mtime": 1782155715.5986912,
+    "size": 60982,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\46-2ebcf93035402ada.js": {
+    "mtime": 1782155715.6011996,
+    "size": 26942,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\682-d187898416da809c.js": {
+    "mtime": 1782155715.6006892,
+    "size": 31776,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\881-8ddba6ce5f555e11.js": {
+    "mtime": 1782155715.6011996,
+    "size": 65563,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\fd9d1056-ad15f396ddf9b7e5.js": {
+    "mtime": 1782155715.5976918,
+    "size": 172834,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\framework-f66176bb897dc684.js": {
+    "mtime": 1782155715.5986912,
+    "size": 139978,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\main-376812c39f1f1497.js": {
+    "mtime": 1782155715.589386,
+    "size": 131105,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\main-app-13b81bdb228c299d.js": {
+    "mtime": 1782155715.589386,
+    "size": 461,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\polyfills-42372ed130431b0a.js": {
+    "mtime": 1782155715.602113,
+    "size": 112594,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\webpack-d8a17c957da3cd04.js": {
+    "mtime": 1782155715.5986912,
+    "size": 3718,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\app\\layout-b01c7b81a695ed13.js": {
+    "mtime": 1782155715.5903833,
+    "size": 3299,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\app\\page-332e58f70c113631.js": {
+    "mtime": 1782155715.5903833,
+    "size": 16166,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\app\\analyse\\page-6a2843cdbe9024b3.js": {
+    "mtime": 1782155715.5986912,
+    "size": 38500,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\app\\_not-found\\page-12f067ceb7415e55.js": {
+    "mtime": 1782155715.5913858,
+    "size": 1745,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\pages\\_app-72b849fbd24ac258.js": {
+    "mtime": 1782155715.5913858,
+    "size": 280,
+    "findings": []
+  },
+  "frontend\\.next\\static\\chunks\\pages\\_error-7ba65e1336b92748.js": {
+    "mtime": 1782155715.5903833,
+    "size": 247,
+    "findings": []
+  },
+  "frontend\\.next\\static\\vLSJhELh1jSsMOBNnQmhF\\_buildManifest.js": {
+    "mtime": 1782155715.6058745,
+    "size": 293,
+    "findings": []
+  },
+  "frontend\\.next\\static\\vLSJhELh1jSsMOBNnQmhF\\_ssgManifest.js": {
+    "mtime": 1782155725.750426,
+    "size": 80,
+    "findings": []
+  },
+  "frontend\\.next\\types\\app\\page.ts": {
+    "mtime": 1782155708.5708766,
+    "size": 3481,
+    "findings": []
+  },
+  "list_security.py": {
+    "mtime": 1782156362.4531095,
+    "size": 881,
+    "findings": [
+      {
+        "file": "list_security.py",
+        "line": 6,
+        "col": 1,
+        "severity": "warning",
+        "category": "style",
+        "rule": "W293",
+        "message": "Blank line contains whitespace",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "list_security.py",
+        "line": 13,
+        "col": 1,
+        "severity": "warning",
+        "category": "style",
+        "rule": "W293",
+        "message": "Blank line contains whitespace",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "list_security.py",
+        "line": 16,
+        "col": 1,
+        "severity": "warning",
+        "category": "style",
+        "rule": "W293",
+        "message": "Blank line contains whitespace",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": true
+      },
+      {
+        "file": "list_security.py",
+        "line": 21,
+        "col": 89,
+        "severity": "error",
+        "category": "bug",
+        "rule": "E501",
+        "message": "Line too long (129 > 88)",
+        "engine": "ruff",
+        "module_context": "",
+        "cwe": "",
+        "fix_available": false
+      },
+      {
+        "file": "list_security.py",
+        "line": 5,
+        "col": 1,
+        "severity": "warning",
+        "category": "bug",
+        "rule": "json-load-file-unvalidated",
+        "message": "json.load() reads and parses a file without schema validation. For configuration files or API responses, validate the structure with a schema library (jsonschema, pydantic) to catch missing fields or type errors early.",
+        "engine": "mustel-patterns",
+        "module_context": "json",
+        "cwe": "",
+        "fix_available": false
+      }
+    ]
+  }
+}

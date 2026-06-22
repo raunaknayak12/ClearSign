@@ -4,7 +4,6 @@ Phase 10.1 — test_routers.py
 Tests health check, file validation (413, 415), and basic routing.
 """
 
-import pytest
 from fastapi.testclient import TestClient
 
 from app.main import app
@@ -77,3 +76,83 @@ class TestQAEndpoint:
         )
         # Should not be a validation error
         assert response.status_code != 422
+
+
+class TestReportEndpoint:
+    """Tests for POST /api/v1/report."""
+
+    def test_generate_report_ok(self):
+        """Generating a report with a valid payload should return 200 with PDF content."""
+        response = client.post(
+            "/api/v1/report",
+            json={
+                "document_type": "Rental Agreement",
+                "clauses": [
+                    {
+                        "clause_id": "clause_1",
+                        "clause_title": "Rent Payment",
+                        "clause_type": "payment",
+                        "original_text": "Tenant shall pay monthly rent of $2000.",
+                        "explanation": "You must pay $2000 per month as rent.",
+                        "is_non_standard": False,
+                        "grounding_statement": "Found in Section 3."
+                    }
+                ]
+            }
+        )
+        assert response.status_code == 200
+        assert response.headers["content-type"] == "application/pdf"
+        assert response.headers["content-disposition"] == "attachment; filename=clearsign-report.pdf"
+        # PDF files start with %PDF header
+        assert response.content.startswith(b"%PDF")
+
+
+class TestSharedAnalysisEndpoint:
+    """Tests for GET /api/v1/analysis/{text_hash}."""
+
+    def test_get_analysis_not_found(self):
+        """Requesting a non-existent hash should return 404."""
+        response = client.get("/api/v1/analysis/nonexistenthash123")
+        assert response.status_code == 404
+
+    def test_get_analysis_ok(self):
+        """Requesting a cached analysis should return 200 with data."""
+        import json
+        import os
+
+        from app.routers.analyse import CACHE_DIR
+
+        test_hash = "testdummyhash12345"
+        cache_file = os.path.join(CACHE_DIR, f"{test_hash}.json")
+        os.makedirs(CACHE_DIR, exist_ok=True)
+
+        dummy_data = {
+            "document_type": "Test Document",
+            "confidence": 0.99,
+            "clauses": [
+                {
+                    "clause_id": "c1",
+                    "clause_title": "Test Title",
+                    "clause_type": "standard",
+                    "original_text": "Original text.",
+                    "explanation": "Explanation.",
+                    "is_non_standard": False,
+                    "grounding_statement": None
+                }
+            ]
+        }
+
+        with open(cache_file, "w", encoding="utf-8") as f:
+            json.dump(dummy_data, f)
+
+        try:
+            response = client.get(f"/api/v1/analysis/{test_hash}")
+            assert response.status_code == 200
+            data = response.json()
+            assert data["document_type"] == "Test Document"
+            assert data["clauses"][0]["clause_title"] == "Test Title"
+        finally:
+            if os.path.exists(cache_file):
+                os.remove(cache_file)
+
+

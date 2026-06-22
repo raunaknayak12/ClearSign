@@ -1,11 +1,11 @@
 """End-to-end test: Upload PDF → SSE stream → Clause breakdown → Q&A."""
 
 import json
+
 import httpx
-import sys
 
 
-def test_analyse():
+def run_analyse():
     """Test the full analysis pipeline with a real PDF."""
     print("=" * 60)
     print("TEST 1: Full Analysis Pipeline (POST /api/v1/analyse)")
@@ -82,7 +82,7 @@ def test_analyse():
                 return clauses, doc_type
 
 
-def test_qa(clauses, doc_type):
+def run_qa(clauses, doc_type):
     """Test Q&A on a clause from the analysis results."""
     print("=" * 60)
     print("TEST 2: Clause Q&A (POST /api/v1/qa)")
@@ -201,10 +201,10 @@ if __name__ == "__main__":
     test_qa_validation()
 
     # Full pipeline test (uses Groq API)
-    clauses, doc_type = test_analyse()
+    clauses, doc_type = run_analyse()
 
     # Q&A test (uses Groq API)
-    test_qa(clauses, doc_type)
+    run_qa(clauses, doc_type)
 
     print("=" * 60)
     print("🎉 ALL 5 TESTS PASSED")

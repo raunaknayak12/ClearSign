@@ -133,11 +133,22 @@ def extract_text(file_bytes: bytes, file_type: str) -> DocumentAnalysis:
         file_type: Either 'pdf' or 'docx'.
 
     Returns:
-        DocumentAnalysis result.
+        DocumentAnalysis result with normalized line endings.
     """
     if file_type == "pdf":
-        return extract_pdf_text(file_bytes)
-    return extract_docx_text(file_bytes)
+        analysis = extract_pdf_text(file_bytes)
+    else:
+        analysis = extract_docx_text(file_bytes)
+
+    # Normalize line endings to \n
+    normalized_text = analysis.raw_text.replace("\r\n", "\n").replace("\r", "\n")
+
+    return DocumentAnalysis(
+        raw_text=normalized_text,
+        char_count=len(normalized_text),
+        page_count=analysis.page_count,
+        file_type=analysis.file_type,
+    )
 
 
 def chunk_text(raw_text: str, max_tokens: int = 5000, overlap_tokens: int = 500) -> list[str]:

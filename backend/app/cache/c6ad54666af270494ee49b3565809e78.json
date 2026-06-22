@@ -1,0 +1,177 @@
+{
+  "document_type": "Non-Disclosure Agreement (NDA)",
+  "confidence": 0.99,
+  "clauses": [
+    {
+      "clause_id": "clause_1",
+      "clause_title": "Introduction and Purpose",
+      "clause_type": "standard",
+      "original_text": "1.1 The Parties intend to explore a potential business collaboration in connection with the integration of\nBrightfield's AI-powered financial analytics engine with Nexova's SaaS workflow automation\nplatform (the \"Purpose\"). In connection with the Purpose, each Party may disclose to the other certain\nconfidential, proprietary, and commercially sensitive information.\n2. DEFINITION OF CONFIDENTIAL INFORMATION",
+      "explanation": "This clause introduces the purpose of the agreement, which is to explore a potential business collaboration between the two parties. It also mentions that the parties may share confidential information with each other in connection with this purpose.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 1.1 of the document"
+    },
+    {
+      "clause_id": "clause_2",
+      "clause_title": "Definition of Confidential Information",
+      "clause_type": "standard",
+      "original_text": "2.1 \"Confidential Information\" means any and all information or data that has or could have commercial\nvalue or other utility in the business in which the Disclosing Party is engaged, disclosed by one Party (the\n\"Disclosing Party\") to the other (the \"Receiving Party\"), whether in written, oral, electronic, visual, or\nany other form, and whether or not marked 'Confidential', including but not limited to: technical\nspecifications, source code, API documentation, product roadmaps, pricing strategies, customer data,\nbusiness plans, financial projections, trade secrets, and personally identifiable information.",
+      "explanation": "This clause defines what is considered confidential information, which includes any information that has commercial value or utility in the business of the disclosing party. This information can be in any form, including written, oral, or electronic, and does not need to be marked as confidential.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 2.1 of the document"
+    },
+    {
+      "clause_id": "clause_3",
+      "clause_title": "Exclusions from Confidential Information",
+      "clause_type": "standard",
+      "original_text": "2.2 Exclusions: Confidential Information shall not include information that: (a) is or becomes publicly\navailable through no breach of this Agreement by the Receiving Party; (b) was rightfully in the Receiving\nParty's possession prior to disclosure by the Disclosing Party without restriction; (c) is independently\ndeveloped by the Receiving Party without use of or reference to the Disclosing Party's Confidential\nInformation; or (d) is required to be disclosed by applicable law or court order, provided the Receiving\nParty gives prompt prior written notice to the Disclosing Party and cooperates in seeking a protective\norder.\n3. OBLIGATIONS OF THE RECEIVING PARTY",
+      "explanation": "This clause lists the exceptions to what is considered confidential information. These exceptions include information that is publicly available, was already in the receiving party's possession, was independently developed, or is required to be disclosed by law.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 2.2 of the document"
+    },
+    {
+      "clause_id": "clause_4",
+      "clause_title": "Obligations of the Receiving Party",
+      "clause_type": "confidentiality",
+      "original_text": "3.1 Each Receiving Party agrees to: (a) hold all Confidential Information of the Disclosing Party in strict\nconfidence using no less than the same degree of care it uses to protect its own confidential information\n(and in any event no less than reasonable care); (b) not disclose Confidential Information to any third\nparty without the prior written consent of the Disclosing Party; (c) use Confidential Information solely for\nthe Purpose; (d) limit access to Confidential Information to its employees, directors, advisors, and\ncontractors who have a bona fide need to know for the Purpose and who are bound by confidentiality\n--- PAGE 2 ---\nobligations no less protective than those in this Agreement; and (e) promptly notify the Disclosing Party in\nwriting upon discovery of any unauthorised disclosure or use of Confidential Information.\n4. TERM AND DURATION",
+      "explanation": "This clause outlines the obligations of the receiving party in handling confidential information. These obligations include keeping the information confidential, not disclosing it to third parties, using it only for the purpose stated, limiting access to those who need to know, and notifying the disclosing party of any unauthorized disclosure or use.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 3.1 of the document"
+    },
+    {
+      "clause_id": "clause_5",
+      "clause_title": "Term and Duration",
+      "clause_type": "standard",
+      "original_text": "4.1 This Agreement shall remain in effect for a period of 2 (two) years from the Effective Date, unless\nearlier terminated by either Party upon 30 (thirty) days' written notice to the other Party.",
+      "explanation": "This clause states that the agreement will remain in effect for 2 years from the effective date, unless one of the parties terminates it with 30 days' written notice.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 4.1 of the document"
+    },
+    {
+      "clause_id": "clause_6",
+      "clause_title": "Survival of Obligations",
+      "clause_type": "standard",
+      "original_text": "4.2 Survival of Obligations: The confidentiality obligations under Clauses 3 and 5 shall survive the\nexpiry or termination of this Agreement for a further period of 3 (three) years from the date of such expiry\nor termination. The Parties' obligations with respect to trade secrets shall survive indefinitely.\n5. RETURN OR DESTRUCTION OF CONFIDENTIAL INFORMATION",
+      "explanation": "This clause states that the confidentiality obligations will continue for 3 years after the agreement expires or is terminated, and that obligations related to trade secrets will continue indefinitely.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 4.2 of the document"
+    },
+    {
+      "clause_id": "clause_7",
+      "clause_title": "Return or Destruction of Confidential Information",
+      "clause_type": "confidentiality",
+      "original_text": "5.1 Upon termination or expiry of this Agreement, or upon written request by the Disclosing Party at any\ntime, the Receiving Party shall promptly: (a) return all tangible materials containing Confidential\nInformation; and (b) permanently delete or destroy (and certify in writing the deletion or destruction of) all\ndigital copies and extracts of Confidential Information from its systems, except to the extent required to be\nretained by applicable law or regulation.\n6. NO LICENCE OR WARRANTY",
+      "explanation": "This clause requires the receiving party to return or destroy all confidential information upon termination or expiry of the agreement, or at the request of the disclosing party.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 5.1 of the document"
+    },
+    {
+      "clause_id": "clause_8",
+      "clause_title": "No License or Warranty",
+      "clause_type": "standard",
+      "original_text": "6.1 Nothing in this Agreement shall be construed as granting the Receiving Party any right, title, licence,\nor interest in or to the Disclosing Party's Confidential Information, intellectual property, or any product or\nservice relating thereto.",
+      "explanation": "This clause states that the agreement does not grant the receiving party any rights or licenses to the disclosing party's confidential information, intellectual property, or related products or services.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 6.1 of the document"
+    },
+    {
+      "clause_id": "clause_9",
+      "clause_title": "No Warranty",
+      "clause_type": "standard",
+      "original_text": "6.2 No Warranty: All Confidential Information is provided on an \"as is\" basis. The Disclosing Party\nmakes no representation or warranty, express or implied, as to the accuracy, completeness, fitness for\npurpose, or non-infringement of any Confidential Information disclosed.\n7. REMEDIES FOR BREACH",
+      "explanation": "This clause states that the disclosing party provides confidential information on an 'as is' basis and makes no warranties or representations about its accuracy, completeness, or fitness for purpose.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 6.2 of the document"
+    },
+    {
+      "clause_id": "clause_10",
+      "clause_title": "Remedies for Breach",
+      "clause_type": "penalty_liability",
+      "original_text": "7.1 Each Party acknowledges that breach of the confidentiality obligations herein would cause irreparable\nharm to the Disclosing Party for which monetary damages would be an inadequate remedy. Accordingly,\nthe Disclosing Party shall be entitled to seek injunctive relief, specific performance, or other equitable\nremedies in any court of competent jurisdiction without the requirement to post a bond, in addition to any\nother remedies available at law.",
+      "explanation": "This clause states that a breach of confidentiality obligations would cause irreparable harm and that the disclosing party may seek injunctive relief, specific performance, or other equitable remedies in addition to other available remedies.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 7.1 of the document"
+    },
+    {
+      "clause_id": "clause_11",
+      "clause_title": "Liquidated Damages",
+      "clause_type": "penalty_liability",
+      "original_text": "7.2 Liquidated Damages: In the event of a proven material breach of this Agreement by the Receiving\nParty, the Receiving Party agrees to pay to the Disclosing Party liquidated damages of Rs. 50,00,000/-\n(Rupees Fifty Lakhs only) per incident, which the Parties agree represents a genuine pre-estimate of\nthe loss and is not a penalty. Payment of liquidated damages shall not limit the Disclosing Party's right to\nclaim additional damages above this amount if actual losses exceed it.\n8. NO OBLIGATION TO PROCEED",
+      "explanation": "This clause states that if the receiving party breaches the agreement, they will pay liquidated damages of Rs. 50,00,000 per incident, which is considered a genuine pre-estimate of the loss and not a penalty.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 7.2 of the document"
+    },
+    {
+      "clause_id": "clause_12",
+      "clause_title": "No Obligation to Proceed",
+      "clause_type": "standard",
+      "original_text": "8.1 Nothing in this Agreement obligates either Party to proceed with any transaction, partnership, or\nbusiness arrangement. Either Party may discontinue discussions at any time without liability, subject to\nthe surviving confidentiality obligations.\n9. NON-SOLICITATION",
+      "explanation": "This clause states that neither party is obligated to proceed with any transaction or business arrangement and that either party can discontinue discussions at any time without liability, except for confidentiality obligations.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 8.1 of the document"
+    },
+    {
+      "clause_id": "clause_13",
+      "clause_title": "Non-Solicitation",
+      "clause_type": "standard",
+      "original_text": "9.1 During the term of this Agreement and for a period of 12 (twelve) months thereafter, neither Party\nshall solicit, recruit, or employ any employee, contractor, or consultant of the other Party who was\n--- PAGE 3 ---\ninvolved in the Purpose or to whom they were introduced in connection with this Agreement, without the\nprior written consent of the other Party.\n10. GOVERNING LAW AND DISPUTE RESOLUTION",
+      "explanation": "This clause states that during the term of the agreement and for 12 months after, neither party can solicit, recruit, or employ the other party's employees, contractors, or consultants who were involved in the purpose or introduced in connection with the agreement, without prior written consent.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 9.1 of the document"
+    },
+    {
+      "clause_id": "clause_14",
+      "clause_title": "Governing Law and Dispute Resolution",
+      "clause_type": "jurisdiction",
+      "original_text": "10.1 This Agreement shall be governed by and construed in accordance with the laws of India. Any\ndispute arising out of or in connection with this Agreement, including any question regarding its existence,\nvalidity, or termination, shall be resolved by binding arbitration under the Arbitration and Conciliation Act,\n1996 (as amended). The seat of arbitration shall be Mumbai, Maharashtra. The language of arbitration\nshall be English.\n11. MISCELLANEOUS",
+      "explanation": "This clause states that the agreement will be governed by Indian law and that any disputes will be resolved through binding arbitration in Mumbai, with English as the language of arbitration.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 10.1 of the document"
+    },
+    {
+      "clause_id": "clause_15",
+      "clause_title": "Entire Agreement",
+      "clause_type": "standard",
+      "original_text": "11.1 Entire Agreement: This Agreement constitutes the entire agreement between the Parties with\nrespect to confidentiality in connection with the Purpose and supersedes all prior discussions and\nagreements.",
+      "explanation": "This clause states that the agreement constitutes the entire agreement between the parties regarding confidentiality and supersedes all prior discussions and agreements.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 11.1 of the document"
+    },
+    {
+      "clause_id": "clause_16",
+      "clause_title": "Amendment",
+      "clause_type": "standard",
+      "original_text": "11.2 Amendment: This Agreement may not be amended or modified except by a written instrument\nsigned by authorised representatives of both Parties.",
+      "explanation": "This clause states that the agreement can only be amended or modified through a written instrument signed by authorized representatives of both parties.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 11.2 of the document"
+    },
+    {
+      "clause_id": "clause_17",
+      "clause_title": "Severability",
+      "clause_type": "standard",
+      "original_text": "11.3 Severability: If any provision of this Agreement is held invalid, illegal, or unenforceable, the\nremaining provisions shall continue in full force and effect.",
+      "explanation": "This clause states that if any provision of the agreement is found to be invalid, illegal, or unenforceable, the remaining provisions will still be in effect.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 11.3 of the document"
+    },
+    {
+      "clause_id": "clause_18",
+      "clause_title": "No Waiver",
+      "clause_type": "standard",
+      "original_text": "11.4 No Waiver: No failure or delay by either Party in exercising any right under this Agreement shall\noperate as a waiver of that right.",
+      "explanation": "This clause states that if either party fails or delays in exercising a right under the agreement, it will not be considered a waiver of that right.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 11.4 of the document"
+    },
+    {
+      "clause_id": "clause_19",
+      "clause_title": "Counterparts",
+      "clause_type": "standard",
+      "original_text": "11.5 Counterparts: This Agreement may be executed in counterparts, each of which shall be deemed an\noriginal, and all of which together shall constitute one and the same instrument. Electronic signatures\nshall be deemed valid and binding.\nIN WITNESS WHEREOF, the duly authorised representatives of the Parties have executed this\nAgreement as of the Effective Date first written above.\nFor Brightfield Analytics India Pvt. Ltd.\nFor Nexova Technologies Pvt. Ltd.\n___________________________\n___________________________\nName: Rohit Singhania\nTitle: CEO\nDate: ____________\nName: Kavitha Rajagopal\nTitle: VP — Legal & People\nDate: ____________",
+      "explanation": "This clause states that the agreement can be executed in multiple counterparts, each of which is considered an original, and that electronic signatures are valid and binding.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on Section 11.5 of the document"
+    }
+  ]
+}

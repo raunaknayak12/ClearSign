@@ -1,0 +1,60 @@
+{
+  "document_type": "Rental Agreement",
+  "confidence": 0.99,
+  "clauses": [
+    {
+      "clause_id": "clause_1",
+      "clause_title": "Rent Payment",
+      "clause_type": "payment",
+      "original_text": "1. RENT PAYMENT\nThe Tenant shall pay monthly rent of ,500 on the first day of each calendar month. Late payments after the 5",
+      "explanation": "The tenant must pay $500 in rent every month on the first day of the month. If the payment is late, there may be penalties, but the specifics are not fully detailed in this segment.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on segment 1 of the document"
+    },
+    {
+      "clause_id": "clause_2",
+      "clause_title": "Security Deposit",
+      "clause_type": "payment",
+      "original_text": "2. SECURITY DEPOSIT\nA security deposit of ,000 shall be paid upon signing. The deposit will be returned within 30 days of lease ter",
+      "explanation": "A security deposit of $1,000 is required when signing the agreement. This deposit will be returned within 30 days after the lease terminates, though the conditions for return are not fully specified in this segment.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on segment 2 of the document"
+    },
+    {
+      "clause_id": "clause_3",
+      "clause_title": "Termination",
+      "clause_type": "termination",
+      "original_text": "3. TERMINATION\nEither party may terminate this agreement with 60 days written notice. Early termination by the Tenant will re",
+      "explanation": "Either the tenant or the landlord can end the agreement by giving 60 days' written notice. If the tenant ends the agreement early, there may be repercussions, but the specifics are not fully detailed in this segment.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on segment 3 of the document"
+    },
+    {
+      "clause_id": "clause_4",
+      "clause_title": "Maintenance",
+      "clause_type": "standard",
+      "original_text": "4. MAINTENANCE\nThe Landlord shall maintain the property in habitable condition. The Tenant is responsible for minor repairs u",
+      "explanation": "The landlord is responsible for keeping the property in a livable condition. The tenant is expected to handle minor repairs, though the specifics of what constitutes 'minor' are not fully detailed in this segment.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on segment 4 of the document"
+    },
+    {
+      "clause_id": "clause_5",
+      "clause_title": "Confidentiality",
+      "clause_type": "confidentiality",
+      "original_text": "5. CONFIDENTIALITY\nBoth parties agree to keep the terms of this agreement confidential and shall not disclose rental amounts to",
+      "explanation": "Both parties agree not to share the details of this agreement with others, specifically including the amount of rent being paid.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on segment 5 of the document"
+    },
+    {
+      "clause_id": "clause_6",
+      "clause_title": "Governing Law",
+      "clause_type": "jurisdiction",
+      "original_text": "6. JURISDICTION\nThis agreement shall be governed by the laws of the State of California. Any disputes shall be resolved in th",
+      "explanation": "This clause means that the agreement will be interpreted and enforced according to the laws of California. It also states that any disputes related to the agreement will be resolved in a court or forum in California, implying that the parties agree to submit to California's jurisdiction.",
+      "is_non_standard": false,
+      "grounding_statement": "This is based on section 6 of the document"
+    }
+  ]
+}

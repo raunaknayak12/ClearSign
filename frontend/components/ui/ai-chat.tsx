@@ -21,6 +21,95 @@ interface AIChatCardProps {
   onClose?: () => void;
 }
 
+function renderMessageText(text: string) {
+  const htmlLinkRegex = /<a\s+href=['"]([^'"]+)['"][^>]*>([\s\S]*?)<\/a>/i;
+  const mdLinkRegex = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/i;
+  const boldRegex = /\*\*([^*]+)\*\*/i;
+
+  let currentText = text;
+  const elements: React.ReactNode[] = [];
+  let key = 0;
+
+  while (currentText) {
+    const htmlMatch = htmlLinkRegex.exec(currentText);
+    const mdMatch = mdLinkRegex.exec(currentText);
+    const boldMatch = boldRegex.exec(currentText);
+
+    let firstMatch = null;
+    let matchType: "html" | "md" | "bold" = "html";
+
+    if (htmlMatch) {
+      firstMatch = htmlMatch;
+      matchType = "html";
+    }
+
+    if (mdMatch) {
+      if (!firstMatch || mdMatch.index < firstMatch.index) {
+        firstMatch = mdMatch;
+        matchType = "md";
+      }
+    }
+
+    if (boldMatch) {
+      if (!firstMatch || boldMatch.index < firstMatch.index) {
+        firstMatch = boldMatch;
+        matchType = "bold";
+      }
+    }
+
+    if (!firstMatch) {
+      elements.push(<span key={key++}>{currentText}</span>);
+      break;
+    }
+
+    const index = firstMatch.index;
+    if (index > 0) {
+      elements.push(<span key={key++}>{currentText.substring(0, index)}</span>);
+    }
+
+    if (matchType === "html") {
+      const href = firstMatch[1];
+      const linkText = firstMatch[2];
+      elements.push(
+        <a
+          key={key++}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#2C5EE8] hover:underline font-bold break-all"
+        >
+          {linkText}
+        </a>
+      );
+    } else if (matchType === "md") {
+      const linkText = firstMatch[1];
+      const href = firstMatch[2];
+      elements.push(
+        <a
+          key={key++}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#2C5EE8] hover:underline font-bold break-all"
+        >
+          {linkText}
+        </a>
+      );
+    } else if (matchType === "bold") {
+      const boldText = firstMatch[1];
+      elements.push(
+        <strong key={key++} className="font-bold text-slate-900">
+          {boldText}
+        </strong>
+      );
+    }
+
+    currentText = currentText.substring(index + firstMatch[0].length);
+  }
+
+  return elements.length > 0 ? elements : text;
+}
+
 export default function AIChatCard({
   className,
   activeClause,
@@ -220,11 +309,13 @@ export default function AIChatCard({
                   : "bg-[#2C5EE8]/10 text-[#1A3DA8] border border-[#2C5EE8]/20 font-semibold self-end rounded-tr-none"
               )}
             >
-              <p className="leading-relaxed whitespace-pre-line">{msg.text}</p>
+              <p className="leading-relaxed whitespace-pre-line">{renderMessageText(msg.text)}</p>
               {msg.clauseTitle && (
-                <span className="inline-block text-[9px] text-[#2C5EE8] mt-1.5 font-bold bg-white/80 px-1.5 py-0.5 rounded border border-[#2C5EE8]/20">
-                  Re: {msg.clauseTitle}
-                </span>
+                <div className="flex flex-wrap gap-1 mt-1.5">
+                  <span className="inline-block text-[9px] text-[#2C5EE8] font-bold bg-white/80 px-1.5 py-0.5 rounded border border-[#2C5EE8]/20">
+                    Re: {msg.clauseTitle}
+                  </span>
+                </div>
               )}
             </motion.div>
           ))}
@@ -233,7 +324,7 @@ export default function AIChatCard({
           {streamingAnswer && (
             <div className="px-3 py-2.5 rounded-xl max-w-[85%] shadow-sm bg-slate-100/90 text-slate-800 border border-slate-200/50 self-start rounded-tl-none">
               <p className="leading-relaxed whitespace-pre-line">
-                {streamingAnswer}
+                {renderMessageText(streamingAnswer)}
                 <span className="inline-block w-1.5 h-3 bg-[#2C5EE8] ml-0.5 animate-pulse" />
               </p>
             </div>

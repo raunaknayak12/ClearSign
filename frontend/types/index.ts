@@ -82,6 +82,7 @@ export interface AnalysisState {
   progressPercent: number;
   progressMessage: string;
   error: string | null;
+  analysisId?: string | null;
 }
 
 // ── Q&A History ──

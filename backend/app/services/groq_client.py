@@ -10,7 +10,6 @@ All calls are async — no sync blocking I/O.
 """
 
 import asyncio
-import json
 import logging
 import os
 from collections.abc import AsyncGenerator

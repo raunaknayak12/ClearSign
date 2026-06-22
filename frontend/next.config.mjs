@@ -1,18 +1,16 @@
 /** @type {import('next').NextConfig} */
-const backendUrl =
-  process.env.API_BACKEND_URL ||
-  process.env.NEXT_PUBLIC_API_URL ||
-  "http://localhost:8000";
-
 const nextConfig = {
-  // Proxy API requests to backend (avoids CORS in production)
+  // ── API Proxy to backend (Phase 1.2) ──
   async rewrites() {
-    return [
-      {
-        source: "/api/:path*",
-        destination: `${backendUrl}/api/:path*`,
-      },
-    ];
+    if (process.env.NODE_ENV === "development") {
+      return [
+        {
+          source: "/api/:path*",
+          destination: "http://localhost:8000/api/:path*",
+        },
+      ];
+    }
+    return [];
   },
 
   // ── Security Headers (TRD §8.3) ──

@@ -6,7 +6,7 @@ Tests PDF and DOCX extraction, empty file handling, and chunking.
 
 import pytest
 
-from app.services.extractor import chunk_text, extract_docx_text, extract_pdf_text
+from app.services.extractor import chunk_text, extract_pdf_text
 
 
 class TestChunkText:

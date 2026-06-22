@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "mustel": {
+      "command": "C:\\Users\\User\\OneDrive\\Desktop\\ClearSign\\backend\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "mustel",
+        "serve"
+      ],
+      "description": "Mustel \u2014 Agent-Native Linter & Guardrail"
+    }
+  }
+}

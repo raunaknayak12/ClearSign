@@ -13,15 +13,17 @@ All processing is in-memory. No file content is persisted.
 
 import asyncio
 import hashlib
+import io
 import json
 import logging
 import os
 
-from fastapi import APIRouter, File, UploadFile
+from fastapi import APIRouter, File, Response, UploadFile
 from fastapi.responses import StreamingResponse
 
 from ..middleware.file_validation import validate_upload
 from ..models.enums import ClauseType
+from ..models.request import ReportRequest
 from ..models.response import ClauseCard
 from ..prompts.breakdown import get_breakdown_prompt
 from ..services.classifier import classify_document
@@ -29,6 +31,7 @@ from ..services.clause_reconciler import parse_clauses_from_json, reconcile_clau
 from ..services.clause_segmenter import chunk_segments, segment_clauses
 from ..services.extractor import extract_text
 from ..services.groq_client import stream_breakdown
+from ..services.pdf_generator import generate_report_pdf
 
 logger = logging.getLogger(__name__)
 
@@ -41,7 +44,7 @@ def get_cached_analysis(text_hash: str) -> dict | None:
     cache_file = os.path.join(CACHE_DIR, f"{text_hash}.json")
     if os.path.exists(cache_file):
         try:
-            with open(cache_file, "r", encoding="utf-8") as f:
+            with open(cache_file, encoding="utf-8") as f:
                 return json.load(f)
         except Exception as e:
             logger.warning("Failed to read analysis cache: %s", e)
@@ -95,7 +98,7 @@ async def analyse_document(file: UploadFile = File(...)):
                 return
 
             text_hash = hashlib.md5(
-                f"{CACHE_VERSION}:{analysis.raw_text}".encode("utf-8")
+                f"{CACHE_VERSION}:{analysis.raw_text}".encode()
             ).hexdigest()
             cached_data = get_cached_analysis(text_hash)
             if cached_data:
@@ -142,7 +145,7 @@ async def analyse_document(file: UploadFile = File(...)):
                         "message": f"Analysis complete — {final_count} clauses covered",
                     }),
                 )
-                yield _format_sse("done", json.dumps({"total_clauses": final_count}))
+                yield _format_sse("done", json.dumps({"total_clauses": final_count, "analysis_id": text_hash}))
                 return
 
             doc_type_result = await classify_document(analysis.raw_text)
@@ -261,7 +264,8 @@ async def analyse_document(file: UploadFile = File(...)):
                     "message": f"Analysis complete — {final_count} clauses covered",
                 }),
             )
-            yield _format_sse("done", json.dumps({"total_clauses": final_count}))
+            yield _format_sse("done", json.dumps({"total_clauses": final_count, "analysis_id": text_hash}))
+
 
         except Exception:
             logger.exception("Error during document analysis")
@@ -282,3 +286,55 @@ async def analyse_document(file: UploadFile = File(...)):
             "X-Accel-Buffering": "no",
         },
     )
+
+
+@router.post("/report")
+async def generate_report(request: ReportRequest):
+    """Generate a PDF report from the list of analyzed clauses and stream it back.
+
+    Stateless and runs fully in-memory.
+    """
+    try:
+        # Create an in-memory bytes stream
+        pdf_buffer = io.BytesIO()
+
+        # We need to construct the dictionary that the PDF generator expects
+        # { "document_type": ..., "clauses": [ ... ] }
+        report_data = {
+            "document_type": request.document_type,
+            "clauses": [clause.model_dump() for clause in request.clauses]
+        }
+
+        generate_report_pdf(report_data, pdf_buffer)
+
+        pdf_bytes = pdf_buffer.getvalue()
+        pdf_buffer.close()
+
+        # Return as a direct response with Content-Length automatically set
+        return Response(
+            content=pdf_bytes,
+            media_type="application/pdf",
+            headers={
+                "Content-Disposition": "attachment; filename=clearsign-report.pdf",
+                "Cache-Control": "no-cache",
+            }
+        )
+    except Exception as e:
+        logger.exception("Failed to generate PDF report")
+        from fastapi import HTTPException
+        raise HTTPException(status_code=500, detail="Could not generate PDF report. Please try again.") from e
+
+
+@router.get("/analysis/{text_hash}")
+async def get_analysis(text_hash: str):
+    """Retrieve a cached analysis by its text hash.
+
+    Allows sharing links to previously analysed documents.
+    """
+    cached = get_cached_analysis(text_hash)
+    if not cached:
+        from fastapi import HTTPException
+        raise HTTPException(status_code=404, detail="Analysis not found or expired.")
+    return cached
+
+

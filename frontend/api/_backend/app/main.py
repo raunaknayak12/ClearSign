@@ -43,31 +43,11 @@ app = FastAPI(
 # CORS Configuration (Phase 3.2 — TRD §8.3)
 # ---------------------------------------------------------------------------
 
-def _build_allowed_origins() -> list[str]:
-    """Build CORS allowlist from env + Vercel deployment URLs."""
-    origins: set[str] = set()
-    for origin in os.getenv("ALLOWED_ORIGINS", "http://localhost:3000").split(","):
-        origin = origin.strip()
-        if origin:
-            origins.add(origin)
-
-    for env_key in ("VERCEL_URL", "VERCEL_BRANCH_URL"):
-        host = os.getenv(env_key, "").strip()
-        if host:
-            origins.add(f"https://{host}")
-
-    project_url = os.getenv("NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL", "").strip()
-    if project_url:
-        origins.add(
-            project_url if project_url.startswith("http") else f"https://{project_url}"
-        )
-
-    return sorted(origins)
-
+allowed_origins = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000").split(",")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=_build_allowed_origins(),
+    allow_origins=[origin.strip() for origin in allowed_origins],
     allow_credentials=False,
     allow_methods=["POST", "GET"],
     allow_headers=["Content-Type"],

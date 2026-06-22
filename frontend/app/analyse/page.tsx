@@ -17,9 +17,10 @@ import Disclaimer from "@/components/shared/Disclaimer";
 import { ResultsHeader } from "@/components/results/ResultsHeader";
 import ClauseList from "@/components/results/ClauseList";
 import { useSSE, getDocumentTypeCode } from "@/hooks/useSSE";
-import { analyseDocument } from "@/lib/api";
-import { CLAUSE_TYPE_LABELS, UI_COPY } from "@/lib/constants";
-import { getPendingFile } from "@/lib/fileStore";
+import { analyseDocument, downloadReport } from "@/lib/api";
+
+import { CLAUSE_TYPE_LABELS, UI_COPY, API_BASE_URL } from "@/lib/constants";
+import { getPendingFile, hasPendingFile } from "@/lib/fileStore";
 import { motion, AnimatePresence } from "framer-motion";
 import Dock from "@/components/ui/dock";
 import AIChatCard from "@/components/ui/ai-chat";
@@ -27,7 +28,7 @@ import { Share2, Download, MessageCircle, Home } from "lucide-react";
 
 export default function AnalysePage() {
   const router = useRouter();
-  const { state: sseState, consumeStream, reset: resetSSE } = useSSE();
+  const { state: sseState, consumeStream, reset: resetSSE, loadAnalysis } = useSSE();
   const [activeClause, setActiveClause] = useState<ClauseCardType | null>(null);
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [activeCategoryFilter, setActiveCategoryFilter] = useState<ClauseType | null>(null);
@@ -40,7 +41,9 @@ export default function AnalysePage() {
   useEffect(() => {
     setMounted(true);
     if (typeof window !== "undefined") {
-      setIsDemo(window.location.search.includes("demo=true"));
+      const hasDemoParam = window.location.search.includes("demo=true");
+      const hasPending = hasPendingFile();
+      setIsDemo(hasDemoParam && !hasPending);
     }
   }, []);
 
@@ -55,14 +58,45 @@ export default function AnalysePage() {
     progressPercent: 0,
     progressMessage: "Analysing your document...",
     error: null as string | null,
+    analysisId: null as string | null,
   });
 
   const state = isDemo ? demoState : sseState;
 
-  // On mount, check for pending file and start analysis
+  // On mount, check for URL ID parameter, then check pending file
   useEffect(() => {
     if (!mounted) return;
-    if (startedRef.current || isDemo) return;
+    if (startedRef.current) return;
+
+    const searchParams = new URLSearchParams(window.location.search);
+    const id = searchParams.get("id");
+
+    if (id && id !== "undefined") {
+      startedRef.current = true;
+      setHasStarted(true);
+
+      (async () => {
+        try {
+          const response = await fetch(`${API_BASE_URL}/api/v1/analysis/${id}`);
+          if (!response.ok) {
+            throw new Error("Analysis not found");
+          }
+          const cachedData = await response.json();
+          resetSSE();
+          loadAnalysis(id, cachedData.document_type, cachedData.clauses);
+        } catch (err) {
+          console.error(err);
+          setDemoState(prev => ({
+            ...prev,
+            error: "Failed to load shared analysis. Please upload your document instead.",
+            isComplete: true
+          }));
+        }
+      })();
+      return;
+    }
+
+    if (isDemo) return;
     
     const file = getPendingFile();
     if (!file) {
@@ -106,7 +140,7 @@ export default function AnalysePage() {
         // Error is handled in SSE state
       }
     })();
-  }, [mounted, router, consumeStream, isDemo]);
+  }, [mounted, router, consumeStream, isDemo, loadAnalysis, resetSSE]);
 
   // Demo progression simulator
   useEffect(() => {
@@ -219,17 +253,49 @@ export default function AnalysePage() {
   // Handle Share action
   const handleShare = useCallback(() => {
     if (typeof window !== "undefined") {
-      navigator.clipboard.writeText(window.location.href);
+      const shareId = state.analysisId;
+      const shareUrl = shareId 
+        ? `${window.location.origin}/analyse?id=${shareId}`
+        : window.location.href;
+      navigator.clipboard.writeText(shareUrl);
       alert("Link copied to clipboard!");
     }
-  }, []);
+  }, [state.analysisId]);
+
 
   // Handle Download action
-  const handleDownload = useCallback(() => {
-    if (typeof window !== "undefined") {
-      window.print();
+  const handleDownload = useCallback(async () => {
+    try {
+      const clauses = state.clauses;
+      const docType = state.documentType;
+
+      if (!clauses || clauses.length === 0) {
+        alert("No clauses to download yet.");
+        return;
+      }
+
+      const blob = await downloadReport(docType, clauses);
+
+      // Create a temporary link element and click it to download the file
+      if (typeof window !== "undefined") {
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `${docType.toLowerCase().replace(/[^a-z0-9]+/g, "_")}_report.pdf`;
+        document.body.appendChild(a);
+        a.click();
+
+        // Cleanup
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);
+      }
+    } catch (err) {
+      console.error(err);
+      const errorMessage = err instanceof Error ? err.message : "Failed to download report PDF.";
+      alert(errorMessage);
     }
-  }, []);
+  }, [state.clauses, state.documentType]);
+
 
   // Handle "Try Again" — back to upload
   const handleTryAgain = useCallback(() => {

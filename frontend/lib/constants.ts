@@ -29,12 +29,8 @@ export const MAX_FILE_SIZE_BYTES = MAX_FILE_SIZE_MB * 1024 * 1024;
 
 // ── API ──
 
-// Production: set NEXT_PUBLIC_API_URL="" on Vercel to use same-origin /api proxy.
-// Local dev: defaults to http://localhost:8000 when unset.
 export const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_URL === ""
-    ? ""
-    : process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+  process.env.NEXT_PUBLIC_API_URL || (typeof window !== "undefined" ? "" : "http://localhost:8000");
 
 // ── Clause Type Colours (UX Brief §6.2) ──
 

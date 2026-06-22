@@ -139,3 +139,35 @@ body {
   clip: auto;
   white-space: normal;
 }
+
+/* ── Print Styles ── */
+@media print {
+  /* Hide floating dock */
+  .dock-container,
+  [data-dock] {
+    display: none !important;
+  }
+
+  /* Hide AI chat panel and overlay */
+  aside,
+  [data-chat-panel],
+  .fixed {
+    display: none !important;
+  }
+
+  /* Hide skip-links */
+  .sr-only {
+    display: none !important;
+  }
+
+  /* Full-width clause list */
+  main {
+    max-width: 100% !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* Remove background/shadows for ink saving */
+  body {
+    background: white !important;
+  }
+}
