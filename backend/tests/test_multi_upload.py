@@ -23,7 +23,7 @@ def test_consecutive_uploads_determinism():
 
     # 2. Compute its cache hash to locate and clear any pre-existing cache file
     analysis = extract_text(file_bytes, "pdf")
-    text_hash = hashlib.md5(f"v2:{analysis.raw_text}".encode()).hexdigest()
+    text_hash = hashlib.sha256(f"v2:{analysis.raw_text}".encode()).hexdigest()
     cache_file = os.path.join(CACHE_DIR, f"{text_hash}.json")
 
     print(f"\nText Hash: {text_hash}")

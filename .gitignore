@@ -23,6 +23,8 @@ build/
 .idea/
 *.swp
 *.swo
+.cursor/
+.agents/
 
 # OS
 .DS_Store
@@ -37,3 +39,8 @@ htmlcov/
 *.log
 .vercel
 .wrangler
+
+# Tool caches
+.mustel/
+.ruff_cache/
+tsconfig.tsbuildinfo

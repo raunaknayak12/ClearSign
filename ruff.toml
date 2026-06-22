@@ -1,0 +1,15 @@
+# Ruff configuration for the ClearSign project.
+# Used by mustel for static analysis.
+
+target-version = "py312"
+line-length = 120
+
+[lint]
+select = ["E", "F", "I", "N", "W", "UP", "B", "S", "ANN"]
+# S101: assert is standard in pytest test files
+# ANN201/ANN202/ANN204: Type annotation warnings are non-critical
+ignore = ["ANN201", "ANN202", "ANN204"]
+
+[lint.per-file-ignores]
+"**/tests/**" = ["S101", "W291"]
+"test_*.py" = ["S101", "W291"]

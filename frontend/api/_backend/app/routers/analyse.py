@@ -45,8 +45,17 @@ def get_cached_analysis(text_hash: str) -> dict | None:
     if os.path.exists(cache_file):
         try:
             with open(cache_file, encoding="utf-8") as f:
-                return json.load(f)
-        except Exception as e:
+                data = json.load(f)
+            # Validate structure before returning
+            if (
+                isinstance(data, dict)
+                and "document_type" in data
+                and "clauses" in data
+            ):
+                return data
+            logger.warning("Invalid cache structure in %s", cache_file)
+            return None
+        except (json.JSONDecodeError, OSError) as e:
             logger.warning("Failed to read analysis cache: %s", e)
             return None
     return None
@@ -97,7 +106,7 @@ async def analyse_document(file: UploadFile = File(...)):
                 yield _format_sse("done", "{}")
                 return
 
-            text_hash = hashlib.md5(
+            text_hash = hashlib.sha256(
                 f"{CACHE_VERSION}:{analysis.raw_text}".encode()
             ).hexdigest()
             cached_data = get_cached_analysis(text_hash)

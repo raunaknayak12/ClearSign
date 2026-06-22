@@ -10,7 +10,10 @@ from reportlab.lib.enums import TA_CENTER, TA_RIGHT
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import mm
-from reportlab.platypus import Flowable, KeepTogether, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
+from reportlab.platypus import (
+    Flowable, KeepTogether, Paragraph,
+    SimpleDocTemplate, Spacer, Table, TableStyle,
+)
 
 # ─── Color palette (matches ClearSign UI) ────────────────────────────────────
 TEAL        = colors.HexColor("#1D9E75")
@@ -54,14 +57,38 @@ WHITE       = colors.white
 
 # ─── Category color map ──────────────────────────────────────────
 CATEGORY_COLORS = {
-    "payment": {"primary": BLUE, "bg": BLUE_LIGHT, "border": BLUE_BORDER, "label": "Payment / Rent"},
-    "termination": {"primary": RED, "bg": RED_LIGHT, "border": RED_BDR, "label": "Termination"},
-    "penalty_liability": {"primary": AMBER, "bg": AMBER_LIGHT, "border": AMBER_BDR, "label": "Penalty / Liability"},
-    "notice_period": {"primary": PURPLE, "bg": PURPLE_LT, "border": PURPLE_BDR, "label": "Notice Period"},
-    "confidentiality": {"primary": TEAL, "bg": TEAL_LIGHT, "border": TEAL_BORDER, "label": "Confidentiality"},
-    "jurisdiction": {"primary": INDIGO, "bg": INDIGO_LT, "border": INDIGO_BDR, "label": "Jurisdiction"},
-    "non_standard": {"primary": ORANGE, "bg": ORANGE_LT, "border": ORANGE_BDR, "label": "Non-Standard"},
-    "standard": {"primary": GRAY, "bg": GRAY_LIGHT, "border": GRAY_BDR, "label": "Standard"},
+    "payment": {
+        "primary": BLUE, "bg": BLUE_LIGHT,
+        "border": BLUE_BORDER, "label": "Payment / Rent",
+    },
+    "termination": {
+        "primary": RED, "bg": RED_LIGHT,
+        "border": RED_BDR, "label": "Termination",
+    },
+    "penalty_liability": {
+        "primary": AMBER, "bg": AMBER_LIGHT,
+        "border": AMBER_BDR, "label": "Penalty / Liability",
+    },
+    "notice_period": {
+        "primary": PURPLE, "bg": PURPLE_LT,
+        "border": PURPLE_BDR, "label": "Notice Period",
+    },
+    "confidentiality": {
+        "primary": TEAL, "bg": TEAL_LIGHT,
+        "border": TEAL_BORDER, "label": "Confidentiality",
+    },
+    "jurisdiction": {
+        "primary": INDIGO, "bg": INDIGO_LT,
+        "border": INDIGO_BDR, "label": "Jurisdiction",
+    },
+    "non_standard": {
+        "primary": ORANGE, "bg": ORANGE_LT,
+        "border": ORANGE_BDR, "label": "Non-Standard",
+    },
+    "standard": {
+        "primary": GRAY, "bg": GRAY_LIGHT,
+        "border": GRAY_BDR, "label": "Standard",
+    },
 }
 
 
@@ -155,7 +182,10 @@ def build_clause_card(clause, styles, content_width, index):
             ('BOX', (0,0), (-1,-1), 0.5, RED_BDR),
         ]))
 
-        badges_t = Table([[badge_t, Spacer(1, 1), risk_t]], colWidths=[35 * mm, 2 * mm, 20 * mm])
+        badges_t = Table(
+            [[badge_t, Spacer(1, 1), risk_t]],
+            colWidths=[35 * mm, 2 * mm, 20 * mm],
+        )
         badges_t.setStyle(TableStyle([
             ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
             ('LEFTPADDING', (0,0), (-1,-1), 0),
@@ -200,7 +230,12 @@ def build_clause_card(clause, styles, content_width, index):
         textColor=TEXT_SEC,
         leading=14
     )
-    card_elements.append(Paragraph(f"<b>Explanation:</b> {clause.get('explanation', '')}", explanation_style))
+    explanation_text = (
+        f"<b>Explanation:</b> {clause.get('explanation', '')}"
+    )
+    card_elements.append(
+        Paragraph(explanation_text, explanation_style)
+    )
     card_elements.append(Spacer(1, 8))
 
     # 3. Original verbatim text in a grey callout box
@@ -240,7 +275,10 @@ def build_clause_card(clause, styles, content_width, index):
             textColor=TEXT_TER,
             leading=11
         )
-        card_elements.append(Paragraph(f"<b>Grounding:</b> {grounding}", grounding_style))
+        grounding_text = f"<b>Grounding:</b> {grounding}"
+        card_elements.append(
+            Paragraph(grounding_text, grounding_style)
+        )
 
     card_container = Table([[card_elements]], colWidths=[content_width])
     card_container.setStyle(TableStyle([
@@ -304,8 +342,18 @@ def generate_report_pdf(data: dict, stream):
     )
 
     header_table = Table(
-        [[Paragraph("ClearSign", title_style), Paragraph("Understand Before You Sign.", tagline_style)]],
-        colWidths=[content_width * 0.5, content_width * 0.5]
+        [
+            [
+                Paragraph("ClearSign", title_style),
+                Paragraph(
+                    "Understand Before You Sign.",
+                    tagline_style,
+                ),
+            ]
+        ],
+        colWidths=[
+            content_width * 0.5, content_width * 0.5
+        ],
     )
     header_table.setStyle(TableStyle([
         ('VALIGN', (0,0), (-1,-1), 'BOTTOM'),
@@ -384,12 +432,23 @@ def generate_report_pdf(data: dict, stream):
     row1 = []
     row2 = []
     # Make sure we iterate in a stable order
-    ordered_keys = ["payment", "termination", "penalty_liability", "notice_period", "confidentiality", "jurisdiction", "non_standard", "standard"]
+    ordered_keys = [
+        "payment", "termination",
+        "penalty_liability", "notice_period",
+        "confidentiality", "jurisdiction",
+        "non_standard", "standard",
+    ]
     for i, k in enumerate(ordered_keys):
         val = CATEGORY_COLORS[k]
         badge_p = Paragraph(
-            f"<font color='{val['primary'].hexval()}'>■</font> {val['label']}",
-            ParagraphStyle("LegendItem", fontName="Helvetica", fontSize=8, textColor=TEXT_SEC)
+            f"<font color='{val['primary'].hexval()}'>"
+            f"■</font> {val['label']}",
+            ParagraphStyle(
+                "LegendItem",
+                fontName="Helvetica",
+                fontSize=8,
+                textColor=TEXT_SEC,
+            ),
         )
         if i < 4:
             row1.append(badge_p)
