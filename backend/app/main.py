@@ -106,6 +106,7 @@ app.include_router(qa.router, prefix="/api/v1", tags=["Q&A"])
 
 
 @app.get("/health", tags=["Infrastructure"])
+@app.get("/api/health", tags=["Infrastructure"])
 async def health_check():
     """Health check endpoint for infrastructure monitoring.
 
