@@ -10,7 +10,12 @@ const nextConfig = {
         },
       ];
     }
-    return [];
+    return [
+      {
+        source: "/api/:path*",
+        destination: "/api/index.py",
+      },
+    ];
   },
 
   // ── Security Headers (TRD §8.3) ──

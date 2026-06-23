@@ -44,3 +44,5 @@ htmlcov/
 .mustel/
 .ruff_cache/
 tsconfig.tsbuildinfo
+
+.vercel
