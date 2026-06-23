@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-06-23 20:59:56 UTC",
+  "hardware_os": "win32",
+  "python_version": "3.13.11",
+  "local_performance": {
+    "pdf_extraction_ms": 4.114640997722745,
+    "segmentation_ms": 0.3030726998113096,
+    "report_generation_ms": 97.14439999777824,
+    "segment_count": 14
+  },
+  "api_performance": {
+    "classification_sec": 0.730326300021261,
+    "breakdown_ttft_sec": 0.378345699980855,
+    "breakdown_total_sec": 2.8400408001616597,
+    "throughput_words_sec": 522.404257093231
+  }
+}

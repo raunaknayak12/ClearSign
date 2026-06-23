@@ -25,6 +25,11 @@ build/
 *.swo
 .cursor/
 .agents/
+.cursorrules
+.windsurfrules
+.mcp.json
+*.bak
+
 
 # OS
 .DS_Store
