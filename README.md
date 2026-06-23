@@ -48,7 +48,7 @@ cp ../.env.example .env.local  # Edit NEXT_PUBLIC_API_URL
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [https://clearsign-gamma.vercel.app/](https://clearsign-gamma.vercel.app/) in your browser.
 
 ## Architecture
 
