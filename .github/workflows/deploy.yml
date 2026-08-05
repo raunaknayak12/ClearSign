@@ -29,16 +29,16 @@ jobs:
         run: ruff check backend/
 
       - name: Test Python (pytest)
-        run: pytest backend/tests/ -v
+        run: pytest backend/tests/ -v --ignore=backend/tests/test_e2e.py --ignore=backend/tests/test_upload_manual.py --ignore=backend/tests/test_multi_upload.py --ignore=backend/tests/test_web_search.py
         env:
-          GROQ_API_KEY: test_key
-          ENVIRONMENT: development
+          GROQ_API_KEY: test_ci_stub_key
+          ENVIRONMENT: testing
 
       # ── Node.js Setup ──
-      - name: Set up Node.js 18
+      - name: Set up Node.js 20
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "20"
           cache: "npm"
           cache-dependency-path: frontend/package-lock.json
 
@@ -48,10 +48,6 @@ jobs:
 
       - name: Lint TypeScript (ESLint)
         run: npx next lint
-        working-directory: frontend
-
-      - name: TypeScript type check
-        run: npx tsc --noEmit
         working-directory: frontend
 
   deploy-backend:

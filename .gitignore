@@ -5,12 +5,14 @@ __pycache__/
 .venv/
 venv/
 
-# Environment files
+# Environment files — NEVER commit secrets
 *.env
 *.env.local
 *.env.production
 *.env.development
 !.env.example
+backend/.env
+frontend/.env.local
 
 # Build outputs
 .next/

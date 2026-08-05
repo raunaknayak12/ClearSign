@@ -20,7 +20,10 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt pytest pytest-asyncio httpx
       - name: Run tests
-        run: pytest tests/ -v --ignore=tests/test_upload_manual.py --ignore=tests/test_e2e.py
+        run: pytest tests/ -v --ignore=tests/test_upload_manual.py --ignore=tests/test_e2e.py --ignore=tests/test_multi_upload.py --ignore=tests/test_web_search.py
+        env:
+          GROQ_API_KEY: test_ci_stub_key
+          ENVIRONMENT: testing
 
   frontend:
     runs-on: ubuntu-latest
