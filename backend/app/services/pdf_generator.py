@@ -11,8 +11,13 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import mm
 from reportlab.platypus import (
-    Flowable, KeepTogether, Paragraph,
-    SimpleDocTemplate, Spacer, Table, TableStyle,
+    Flowable,
+    KeepTogether,
+    Paragraph,
+    SimpleDocTemplate,
+    Spacer,
+    Table,
+    TableStyle,
 )
 
 # ─── Color palette (matches ClearSign UI) ────────────────────────────────────
@@ -100,7 +105,7 @@ class ThinRule(Flowable):
         self.thickness = thickness
         self.color = color
 
-    def wrap(self, availWidth, availHeight):
+    def wrap(self, availWidth, availHeight):  # noqa: N803
         return self.width, self.thickness
 
     def draw(self):

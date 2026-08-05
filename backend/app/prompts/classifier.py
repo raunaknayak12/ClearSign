@@ -7,31 +7,35 @@ Temperature: 0.1
 max_tokens: 256
 """
 
-CLASSIFIER_SYSTEM_PROMPT = """You are a document classifier. Given the first section of a legal or formal document, identify the document type.
-
-Respond with ONLY a valid JSON object in this exact format:
-{{
-  "document_type": "the type of document",
-  "confidence": 0.95
-}}
-
-Common document types include (but are not limited to):
-- Rental Agreement
-- Employment Contract
-- Non-Disclosure Agreement (NDA)
-- Service Agreement
-- Sales Contract
-- Partnership Agreement
-- Loan Agreement
-- Terms of Service
-- Privacy Policy
-- Consulting Agreement
-- Lease Agreement
-- Freelance Contract
-
-Analyse this document excerpt:
-
-{text_excerpt}"""
+CLASSIFIER_SYSTEM_PROMPT = (
+    "You are a document classifier. "
+    "Given the first section of a legal or formal document, "
+    "identify the document type.\n"
+    "\n"
+    "Respond with ONLY a valid JSON object in this exact format:\n"
+    "{{\n"
+    '  "document_type": "the type of document",\n'
+    '  "confidence": 0.95\n'
+    "}}\n"
+    "\n"
+    "Common document types include (but are not limited to):\n"
+    "- Rental Agreement\n"
+    "- Employment Contract\n"
+    "- Non-Disclosure Agreement (NDA)\n"
+    "- Service Agreement\n"
+    "- Sales Contract\n"
+    "- Partnership Agreement\n"
+    "- Loan Agreement\n"
+    "- Terms of Service\n"
+    "- Privacy Policy\n"
+    "- Consulting Agreement\n"
+    "- Lease Agreement\n"
+    "- Freelance Contract\n"
+    "\n"
+    "Analyse this document excerpt:\n"
+    "\n"
+    "{text_excerpt}"
+)
 
 
 def get_classifier_prompt(text_excerpt: str) -> str:

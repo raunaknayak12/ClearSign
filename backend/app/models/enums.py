@@ -4,10 +4,10 @@ Per Backend Schema §3 — defines all enumerated types used across
 request/response models and business logic.
 """
 
-from enum import Enum
+from enum import StrEnum
 
 
-class ClauseType(str, Enum):
+class ClauseType(StrEnum):
     """Classification categories for document clauses.
 
     Each clause is tagged with exactly one type, which determines
@@ -24,7 +24,7 @@ class ClauseType(str, Enum):
     STANDARD = "standard"
 
 
-class FileType(str, Enum):
+class FileType(StrEnum):
     """Supported upload file formats.
 
     Maps to MIME type validation and extraction method selection
@@ -35,7 +35,7 @@ class FileType(str, Enum):
     DOCX = "docx"
 
 
-class SSEEventType(str, Enum):
+class SSEEventType(StrEnum):
     """Server-Sent Event types emitted by the /api/v1/analyse endpoint.
 
     - clause:   A fully parsed ClauseCard JSON payload

@@ -1,4 +1,4 @@
-# ruff: noqa: E402
+# ruff: noqa: E402, I001
 from dotenv import load_dotenv
 load_dotenv()
 
