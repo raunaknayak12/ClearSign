@@ -59,7 +59,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Check Cloudflare Credentials
+        if: ${{ secrets.CLOUDFLARE_API_TOKEN == '' }}
+        run: echo "::notice::CLOUDFLARE_API_TOKEN secret is not configured in GitHub repository secrets. Skipping automated Cloudflare deployment."
+
       - name: Deploy to Cloudflare Workers
+        if: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -76,7 +81,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Check Vercel Credentials
+        if: ${{ secrets.VERCEL_TOKEN == '' }}
+        run: echo "::notice::VERCEL_TOKEN secret is not configured in GitHub repository secrets. Skipping automated Vercel deployment."
+
       - name: Deploy to Vercel
+        if: ${{ secrets.VERCEL_TOKEN != '' }}
         uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
