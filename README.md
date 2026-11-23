@@ -4,21 +4,24 @@ ClearSign is an AI-powered document analysis tool that breaks down legal documen
 
 ## Features (v1.0)
 
-- **Universal Upload** — Drag-and-drop or tap to upload PDF/DOCX files (up to 10 MB)
-- **Full-Coverage Breakdown** — Every clause identified, categorised, and explained in plain language
-- **Document-Type Awareness** — Automatically detects document type (rental, employment, NDA, etc.)
-- **Clause-Level Q&A** — Ask follow-up questions about any clause, grounded strictly in document content
-- **Real-Time Streaming** — Clause cards stream in progressively via SSE — no full-page wait
-- **Zero Friction** — No sign-up, no login, no data storage. Your document is never saved.
+- **Universal Upload** — Drag-and-drop or file selector supporting PDF and DOCX documents (up to 10 MB)
+- **Document-Type Awareness** — Auto-detects contract category (Employment, Lease/Rental, Non-Disclosure Agreement (NDA), Service Agreement, Vendor Agreement) using `llama-3.1-8b-instant`
+- **Full-Coverage Breakdown** — Deep clause decomposition, categorization (Payment, Termination, Liability, Confidentiality, IP, Non-Compete), and plain-English translations powered by `llama-3.3-70b-versatile`
+- **Risk & Red-Flag Identification** — Highlights atypical, high-liability, or aggressive clauses with actionable risk flags
+- **Clause-Level Q&A** — Context-grounded interactive chat on specific clauses powered by low-latency Llama 3 inference
+- **Real-Time Streaming** — Progressive Server-Sent Events (SSE) streaming clause cards directly to the UI without full-page blocking
+- **Exportable PDF Reports** — High-quality downloadable analysis summary generated on-the-fly via ReportLab (`app/services/pdf_generator.py`)
+- **Privacy-First Architecture** — Zero sign-up, zero document persistence, no tracking database. File streams process strictly in-memory
 
 ## Stack
 
-| Layer | Technology |
-|---|---|
-| Frontend | Next.js 14 (App Router, TypeScript, Tailwind CSS) |
-| Backend | Python 3.12, FastAPI |
-| AI | Groq API (Llama 3 70B / 8B) |
-| Hosting | Vercel (Frontend), Render Docker Container (Backend) |
+| Layer | Technology | Details |
+|---|---|---|
+| Frontend | Next.js 14 (App Router, TypeScript) | Tailwind CSS, Server-Sent Events client hook, progressive rendering |
+| Backend | FastAPI (Python 3.12) | Async pipeline, PyMuPDF (`fitz`), `python-docx`, ReportLab |
+| AI Inference | Groq Cloud API | `llama-3.3-70b-versatile` (analysis) & `llama-3.1-8b-instant` (classification / Q&A) |
+| Hosting | Vercel & Render | Frontend on Vercel (`vercel.json`), Backend Docker service on Render (`render.yaml`) |
+| CI/CD | GitHub Actions | Automated linting, test suites, and Vercel preview deploys |
 
 ## Getting Started
 
@@ -53,13 +56,35 @@ Open [https://clearsign-gamma.vercel.app/](https://clearsign-gamma.vercel.app/) 
 ## Architecture
 
 ```
-clearsign/
-├── frontend/          # Next.js 14 — Upload page + Results/Q&A page
-├── backend/           # FastAPI — File extraction + Groq AI inference
-├── .github/workflows/ # CI/CD — lint, test, deploy
-├── .env.example       # All environment variables documented
-└── README.md
+ClearSign/
+├── frontend/                  # Next.js 14 App Router application
+│   ├── app/                   # Root layout, /analyse and /view routes
+│   ├── components/            # ClauseCard, DocumentViewer, RiskBadge, QAModal
+│   ├── hooks/                 # useAnalysisStream.ts (SSE streaming client)
+│   └── package.json           # React 18, Tailwind, Lucide icons
+├── backend/                   # FastAPI high-throughput async microservice
+│   ├── app/
+│   │   ├── main.py            # FastAPI ASGI entrypoint, CORS, routers
+│   │   ├── routers/           # /analyse (SSE stream), /qa (clause Q&A), /download-pdf
+│   │   ├── services/
+│   │   │   ├── extractor.py       # PDF/DOCX multi-format text parsing (PyMuPDF, docx)
+│   │   │   ├── classifier.py      # Zero-shot contract type classification
+│   │   │   ├── groq_client.py     # Resilient Groq async client with backoff
+│   │   │   ├── clause_segmenter.py# Legal clause regex & boundary segmenter
+│   │   │   ├── pdf_generator.py   # Client PDF summary compiler (ReportLab)
+│   │   │   └── web_search.py      # Contextual legal definitions (DuckDuckGo Lite)
+│   │   └── models/            # Pydantic request/response schemas & enums
+│   ├── Dockerfile             # Multi-stage production container
+│   └── requirements.txt       # Pinned backend dependencies
+├── render.yaml                # Render Infrastructure-as-Code blueprint
+├── vercel.json                # Vercel frontend routing & deployment config
+└── README.md                  # Project documentation
 ```
+
+## Authors & Contact
+
+- **Author**: Raunak Nayak ([GitHub](https://github.com/raunaknayak12) · [LinkedIn](https://linkedin.com/in/raunak-nayak-5b937732a))
+- **Live Application**: [https://clearsign-gamma.vercel.app/](https://clearsign-gamma.vercel.app/)
 
 ## Disclaimer
 
