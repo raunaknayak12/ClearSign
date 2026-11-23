@@ -18,7 +18,7 @@ ClearSign is an AI-powered document analysis tool that breaks down legal documen
 | Frontend | Next.js 14 (App Router, TypeScript, Tailwind CSS) |
 | Backend | Python 3.12, FastAPI |
 | AI | Groq API (Llama 3 70B / 8B) |
-| Hosting | Vercel (frontend), Cloudflare Workers (backend) |
+| Hosting | Vercel (Frontend), Render Docker Container (Backend) |
 
 ## Getting Started
 
@@ -31,7 +31,7 @@ ClearSign is an AI-powered document analysis tool that breaks down legal documen
 
 ```bash
 # Clone the repo
-git clone <repo-url> && cd clearsign
+git clone https://github.com/raunaknayak12/ClearSign.git && cd ClearSign
 
 # Backend
 cd backend
